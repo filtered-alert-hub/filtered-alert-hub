@@ -9,7 +9,6 @@ from lxml import etree as ET
 import StringIO
 from io import BytesIO
 
-
 import boto3
 
 def makeItem(caproot,metadata):
@@ -31,6 +30,9 @@ def makeItem(caproot,metadata):
 	namespaces = {'cap': 'urn:oasis:names:tc:emergency:cap:1.1'}
 
 	alerttime = dateutil.parser.parse(caproot.xpath("string(cap:sent/text())", namespaces=namespaces ))
+	#print("got time {} from cap".format(alerttime))
+	alerttime =  (alerttime - alerttime.utcoffset()).replace(tzinfo=None) if alerttime.utcoffset() else alerttime #convert to UTC
+	#print("converted to  {} ".format(alerttime))
 
 
 	title.text = caproot.xpath("string(cap:info/cap:headline/text())", namespaces=namespaces )
@@ -67,9 +69,11 @@ def writeItemsToFeed(feedroot,items):
 
 	#update pubdates
 
-	timenow = datetime.utcnow()
-	pubdate =  "{} GMT".format(timenow.strftime("%a, %d %b %Y %H:%M:%S %z")) 
-	dcdatee = "{}Z".format(timenow.isoformat())
+	timenow = datetime.utcnow() #now timezone aware. need to add in formating
+	pubdate =  "{} GMT".format(timenow.strftime("%a, %d %b %Y %H:%M:%S")) 
+	dcdate = "{}Z".format(timenow.isoformat())
+	
+	#print("setting date feed update to {} and {}".format(pubdate,dcdate))
 
 	pubdateelem = feedroot.xpath("/rss/channel/pubDate")
 	if pubdateelem:
@@ -80,7 +84,7 @@ def writeItemsToFeed(feedroot,items):
 	dcdateelem = feedroot.xpath("/rss/channel/dc:date",namespaces=namespaces)	
 	if dcdateelem:
 		dcdateelem = dcdateelem[0]
-		dcdateelem.text = dcdatee
+		dcdateelem.text = dcdate
 
 	
 def updateRss(feedupdate):
@@ -162,4 +166,3 @@ def lambda_handler(event, context):
 	for feedid,feedupdate in rssfeedupdates.iteritems():
 		updateRss(feedupdate)
 		
-	context.succeed()
