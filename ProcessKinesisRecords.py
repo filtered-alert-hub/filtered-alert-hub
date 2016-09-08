@@ -117,7 +117,7 @@ def updateRss(feedupdate):
 	s3 = boto3.client('s3')
 	
 	s3keyold =  "{}/rss.xml".format(feedid)
-	s3bucketold = "alert-feeds"
+	s3bucketold = "test-rss-output"
 	print("downloading old feed {} from S3 bucket {}".format(s3keyold,s3bucketold))
 	
 	response = s3.get_object(Bucket=s3bucketold,Key=s3keyold)
@@ -131,7 +131,7 @@ def updateRss(feedupdate):
 		rssdom.write(outdata, xml_declaration=True ,pretty_print=True, encoding="UTF-8")
 		outdata.seek(0)
 		
-		s3key = "{}-rss.xml".format(feedid)
+		s3key = "{}/rss.xml".format(feedid)
 		s3bucket = 'test-rss-output'
 		print("writing back updated RSS feed to {} {}".format(s3bucket,s3key))
 		s3.put_object(Bucket=s3bucket,Key=s3key,ACL='public-read',ContentType="application/rss+xml",Body=outdata.read())	
@@ -141,9 +141,14 @@ def lambda_handler(event, context):
 
 	rssfeedupdates = {}
 	feedmetadata = {}
+	
+	records = event['Records']
+	
+	print("start kinesis processing of {} records".format( str(len(records)) ))
+
 
 	# we group the alerts by feed 
-	for record in event['Records']:
+	for record in records:
 		#Kinesis data is base64 encoded so decode here and parse the json
 		message = json.loads(base64.b64decode(record["kinesis"]["data"])) 
 		

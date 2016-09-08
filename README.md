@@ -7,10 +7,14 @@
 
 ### configuration
 
-##create AWS lambda function for processing of subscription 
+##create and update AWS lambda function for processing of subscription 
 
 aws lambda create-function --function-name ProcessSubscription --runtime "python2.7" --handler ProcessSubscription.lambda_handler --zip-file fileb://ProcessSubscription.zip
 aws lambda update-function-code --function-name ProcessSubscription --zip-file fileb://ProcessSubscription.zip
+
+aws lambda create-function --function-name ProcessKinesisRecords --runtime "python2.7" --handler ProcessKinesisRecords.lambda_handler --zip-file fileb://ProcessKinesisRecords.zip
+aws lambda update-function-code --function-name ProcessKinesisRecords --zip-file fileb://ProcessKinesisRecords.zip
+
 
 ##subscribe lambda function to SNS topic 
 
@@ -30,3 +34,13 @@ aws lambda create-event-source-mapping --function-name ProcessKinesisRecords --e
 ## create policy
 
 need to allow the AWS lambda role to put and get from kinesis and to access s3
+
+## send test event to SNS topic
+aws sns list-topics
+
+aws sns publish --topic-arn "arn:aws:sns:eu-west-1:921181852858:timo-test-sns" --message "file://./sns_test_1"
+
+## maintenance
+
+aws logs delete-log-group --log-group-name "/aws/lambda/ProcessKinesisRecords"
+aws logs delete-log-group --log-group-name "/aws/lambda/ProcessSubscription"

@@ -1,0 +1,55 @@
+{
+    "alert": {
+        "folderName": "mosul-dam-ku",
+        "sourceLanguage": "fr",
+        "sourceIsOfficial": true,
+        "inputBucketName": "alert-hub-input",
+        "sourceName": "Iraq Ministry of Water Resources, Mosul Dam alerts in Kurdish",
+        "capXml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?><cap:alert xmlns:cap=\"urn:oasis:names:tc:emergency:cap:1.1\">  <cap:identifier>msg_actual-public_fr_of_nohp</cap:identifier>  <cap:sender>Eliot.Christian@redcross.org</cap:sender>  <cap:sent>2016-03-10T22:12:03.770</cap:sent>  <cap:status>Actual</cap:status>  <cap:msgType>Update</cap:msgType>  <cap:scope>Public</cap:scope>  <cap:addresses>emergency.manager@isp.net</cap:addresses>  <cap:note>Disregard the referenced alert.</cap:note>  <cap:references>Eliot.Christian@redcross.org,urn:oid:2.49.0.3.1.127.2016.3.10.10.10.12.3.764,2016-03-10T22:12:03.764</cap:references>  <cap:info>    <cap:language>fr</cap:language>    <cap:category>Met</cap:category>    <cap:event>flood</cap:event>    <cap:responseType>Shelter</cap:responseType>    <cap:urgency>Immediate</cap:urgency>    <cap:severity>Minor</cap:severity>    <cap:certainty>Observed</cap:certainty>    <cap:expires>2016-03-11T08:00:00-00:00</cap:expires>    <cap:senderName>New Zealand Red Cross</cap:senderName>    <cap:headline>Flood warning for low-lying areas near Wellington, NZ.</cap:headline>    <cap:description>Flood warning overnight for low-lying areas near Wellington, NZ.</cap:description>    <cap:instruction>Residents in low-lying areas should exercise caution. Avoid low areas. Persons should not be out on the roads during heavy rainfall. If you must be outside, use extreme caution. Do not drive your vehicle into areas where water covers the roadway. Vehicles caught in rising waters should be abandoned quickly. Continue listening to local media as updates will be provided if conditions change significantly.</cap:instruction>    <cap:area>      <cap:areaDesc>North Island and South Island within 50 miles of Welllington.</cap:areaDesc>      <cap:polygon>-38.8,173 -41.2,170.7 -44,175.3 -41.2,178 -38.8,173</cap:polygon>      <cap:circle/>    </cap:area>  </cap:info></cap:alert>",
+        "inputRecordKey": "mosul-dam-ku/myTestFile.xml",
+        "hubRecordKey": "msg_actual-public_fr_of_nohp.json",
+        "capNamespaceUri": "urn:oasis:names:tc:emergency:cap:1.1",
+        "hubBucketName": "alert-hub"
+    },
+    "subscription": {
+        "areaFilterId": "country-gb-city-Sheffield",
+        "xPathFilter": "//cap:status='Actual' and //cap:scope='Public'",
+        "subscriptionId": "actual-public_en_of_hp",
+        "areaFilter": {
+            "polygonCoordinates": [
+                [
+                    -1.55,
+                    53.4
+                ],
+                [
+                    -1.55,
+                    53.33
+                ],
+                [
+                    -1.38,
+                    53.33
+                ],
+                [
+                    -1.38,
+                    53.44
+                ],
+                [
+                    -1.55,
+                    53.44
+                ],
+                [
+                    -1.55,
+                    53.4
+                ]
+            ],
+            "circleCenterRadius": "none"
+        },
+        "officialOnly": true,
+        "languageOnly": "en",
+        "subscriptionUrl": "https://alert-feeds.s3.amazonaws.com/actual-public_en_of_hp/rss.xml",
+        "highPriorityOnly": true,
+        "subscriptionName": "actual-public_en_of_hp testfeeds",
+        "feed-rss-xml": "<?xml version='1.0' encoding='UTF-8'?><rss version='2.0' xmlns:atom='http://www.w3.org/2005/Atom'><channel><link rel='alternate' title='RSS' href='https://s3-eu-west-1.amazonaws.com/alert-feeds/country-gb-city-Sheffield-lang-en/rss.xml' type='application/rss+xml' /><title>Test Public alerts for Sheffield in country-gb, in English</title><link>https://alert-feeds.s3.amazonaws.com/country-gb-city-Sheffield-lang-en/rss.xml</link><description>This feed lists the most recent Test Public alerts for Sheffield in country-gb, in English.</description><language>en</language><copyright>public domain</copyright><pubDate>Thu, 19 Dec 2013 10:31:34 GMT</pubDate><lastBuildDate>Thu, 19 Dec 2013 10:31:34 GMT</lastBuildDate><docs>http://blogs.law.harvard.edu/tech/rss</docs><image><title>Test Public alerts for Sheffield in country-gb, in English</title><url>https://s3-eu-west-1.amazonaws.com/alert-feeds/country-gb-city-Sheffield-lang-en/logo.jpg</url><link>https://s3-eu-west-1.amazonaws.com/alert-feeds/country-gb-city-Sheffield-lang-en/rss.xml</link></image></channel></rss>",
+        "xPathFilterId": "actual-public"
+    }
+}

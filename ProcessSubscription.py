@@ -7,6 +7,9 @@ from lxml import etree
 
 #from lxml import etree
 
+testing = True 
+debug = True
+
 print('Loading function')
 
 class CAPFilter:
@@ -23,13 +26,13 @@ class CAPFilter:
 		
 		for option,val in options.items():
 			if (option=="official"):
-				self.officialOnly=val
+				self.officialOnly= (val == True )
 			elif (option=="priority"):
-				self.priorityOnly=val
+				self.priorityOnly= (val == True )
 			elif (option=="xpath"):
 				self.filterXpath= False if (val == "none") else val
 			elif (option=="language"):
-				self.langOnly = False if (val == "none"  ) else val.split(",")
+				self.langOnly = False if (val == "none" or not val   ) else val.split(",")
 			else:
 				raise Exception("argument "+option+" not supported")
 		
@@ -43,7 +46,7 @@ class CAPFilter:
 		if (self.officialOnly):
 			ret+=" official"
 		if (self.langOnly):
-			ret+=" languages" + ( ",".join(self.langOnly) )
+			ret+=" languages " + ( ",".join(self.langOnly) )
 		if (self.priorityOnly):
 			ret+=" priority"
 		if (self.filterXpath):
@@ -64,18 +67,22 @@ class CAPFilter:
 
 		if (self.officialOnly):
 			if not alert["sourceIsOfficial"]:
+				if debug: print("rejecting because of notofficial") 
 				return False
 		
 		if (self.langOnly):
 			if not alert["sourceLanguage"] in self.langOnly:
+				if debug: print("rejecting because of language") 
 				return False
 				
 		if (self.priorityOnly):
 			if not self.checkPriority(alert,tree):
+				if debug: print("rejecting because of priority") 
 				return False
 		
 		if (self.filterXpath):
 			if not self.checkPath(root,self.filterXpath):
+				if debug: print("rejecting because of priority") 
 				return False
 				
 		return True
@@ -123,8 +130,9 @@ def parseEvent(event):
 	
 	
 	capFilter = CAPFilter(filterOptions)
-	
-	#print(capFilter)
+
+	if debug:
+		print(capFilter)
 	
 	if capFilter.matches( alert ) :
 		url = subscription["subscriptionUrl"]
@@ -132,8 +140,9 @@ def parseEvent(event):
 
 		kinesismessage = { "alert" : alert , "subscription" : subscription  }
 		
-		kinesis = boto3.client('kinesis')
-		kinesis.put_record(StreamName="testkinesisstream", Data=json.dumps(kinesismessage), PartitionKey = feedid)
+		if not testing:
+			kinesis = boto3.client('kinesis')
+			kinesis.put_record(StreamName="testkinesisstream", Data=json.dumps(kinesismessage), PartitionKey = feedid)
 
 		
 
