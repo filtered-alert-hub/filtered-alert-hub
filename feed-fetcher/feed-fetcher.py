@@ -38,7 +38,8 @@ with open("alert-hub-sources-json.txt") as data:
 
 		etag=None
 		modified=None
-		if c.execute("SELECT etag,modified from feedinfo where feedid=? order by date DESC", (feedid,) ).fetchone() :
+		r = c.execute("SELECT etag,modified from feedinfo where feedid=? order by date DESC", (feedid,) ).fetchone()
+		if r:
 			etag=r["etag"]
 			modified=r["modified"]
 		
@@ -63,7 +64,7 @@ with open("alert-hub-sources-json.txt") as data:
 				
 				try:
 					inputBucketName = "alert-hub-input-t"
-					inputRecordKey = "{}/{}{}".format(feedid,source["sourceId"],urlparse(link).path)
+					inputRecordKey = "{}{}".format(feedid,urlparse(link).path)
 					capXML = urllib.request.urlopen(link).read() #TODO: need some protection against too large files..
 					if debug: print("received {} from {}".format(id,link))
 					
