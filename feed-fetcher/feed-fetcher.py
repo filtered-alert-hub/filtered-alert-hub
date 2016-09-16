@@ -17,6 +17,8 @@ import time
 pollinterval=60
 s3inputbucket="wmo-alert-hub-input"
 
+#TODO: check feed status code to identify invalid URLS
+
 class SignalHandler:
 	stopper = None
 	workers = None
