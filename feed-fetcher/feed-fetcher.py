@@ -18,6 +18,7 @@ pollinterval=60
 s3inputbucket="wmo-alert-hub-input"
 
 #TODO: check feed status code to identify invalid URLS
+#TODO: check file size
 
 class SignalHandler:
 	stopper = None

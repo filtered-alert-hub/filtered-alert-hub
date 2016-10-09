@@ -1,0 +1,6 @@
+{
+     "TopicConfiguration": {
+       "Event": "s3:ObjectCreated:*",
+       "Topic": "arn:aws:sns:eu-west-1:921181852858:alert-hub-input-topic"
+     }
+}

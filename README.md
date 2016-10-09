@@ -44,3 +44,28 @@ aws sns publish --topic-arn "arn:aws:sns:eu-west-1:921181852858:timo-test-sns" -
 
 aws logs delete-log-group --log-group-name "/aws/lambda/ProcessKinesisRecords"
 aws logs delete-log-group --log-group-name "/aws/lambda/ProcessSubscription"
+
+## create topic to notify lambda of new alerts 
+aws sns create-topic --name alert-hub-input-topic 
+
+allow s3 to public to topic by adding this policy to the topic
+{
+	"Sid": "_s3",
+	"Effect": "Allow",
+	"Principal": {
+	"AWS": "*"
+	},
+	"Action": "SNS:Publish",
+	"Resource": "arn:aws:sns:eu-west-1:921181852858:alert-hub-input-topic",
+	"Condition": {
+	"StringEquals": {
+	"aws:SourceArn": "arn:aws:s3:::wmo-alert-hub-input"
+	}
+	}
+}
+
+then configure notification of new s3 objects in bucket to sns topic
+-using console.. usin s3api it does not seem to work..
+
+finally trigger alert-capture function by SNS topic
+aws sns subscribe --topic-arn "arn:aws:sns:eu-west-1:921181852858:alert-hub-input-topic"  --protocol "lambda" --notification-endpoint "arn:aws:lambda:eu-west-1:921181852858:function:alert-capture"
