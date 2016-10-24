@@ -11,6 +11,9 @@ from io import BytesIO
 
 import boto3
 
+maxfeeditems=200
+maxfeedsecs = 60*60*2 # 2 hours 
+
 def makeItem(caproot,metadata):
 
 	newitem = ET.Element("item")
@@ -52,10 +55,20 @@ def makeItem(caproot,metadata):
 
 def writeItemsToFeed(feedroot,items):
 
+	#prune old items 
+	timenow = datetime.utcnow() #now timezone aware. need to add in formating
+	i=1
+	for olditem in feedroot.xpath("/rss/channel/item"):
+		itemnr = len(items)+i #need to consider the newly arrived items
+		itemdate = dateutil.parser.parse(olditem.find('pubDate').text)
+		
+		if len(items)+i > maxfeeditems and (timenow - itemdate) > maxfeedsecs * 1000:
+			olditem.getroot().remove(olditem)
+		i=i+1
+
 	existingitems = feedroot.xpath("/rss/channel/item")
 	if existingitems:
 		firstitem = existingitems[0]
-		
 		parent = firstitem.getparent()
 		idx = parent.index(firstitem)
 
@@ -64,7 +77,8 @@ def writeItemsToFeed(feedroot,items):
 		parent = parent[0]
 		idx = len(parent)
 
-	for newitem in items:
+	for i,newitem in enumerate(items):
+		if i<maxfeeditems or 
 		parent.insert(idx, newitem)
 
 	#update pubdates
