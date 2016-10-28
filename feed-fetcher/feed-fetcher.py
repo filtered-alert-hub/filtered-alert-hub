@@ -15,7 +15,7 @@ import signal
 import time
 
 pollinterval=60
-s3inputbucket="wmo-alert-hub-input"
+s3inputbucket="alert-hub-input"
 
 #TODO: check feed status code to identify invalid URLS
 #TODO: check file size
@@ -59,7 +59,8 @@ class ProcessFeedThread (threading.Thread):
 	
 		httpsession = requests.Session()
 		haderror = False
-		s3 = boto3.client("s3")
+		session = boto3.Session(profile_name='wah')
+		s3 = session.client("s5")
 
 		for item in items:
 			id = item["id"]
