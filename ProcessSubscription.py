@@ -7,7 +7,7 @@ from lxml import etree
 
 #from lxml import etree
 
-testing = True 
+testing = False
 debug = True
 
 print('Loading function')
