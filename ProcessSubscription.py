@@ -142,7 +142,7 @@ def parseEvent(event):
 		
 		if not testing:
 			kinesis = boto3.client('kinesis')
-			kinesis.put_record(StreamName="testkinesisstream", Data=json.dumps(kinesismessage), PartitionKey = feedid)
+			kinesis.put_record(StreamName="wah_kinesis_writequeue", Data=json.dumps(kinesismessage), PartitionKey = feedid)
 
 		
 

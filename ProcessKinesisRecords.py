@@ -2,7 +2,7 @@ from __future__ import print_function
 import json
 import base64
 import sys
-from datetime import datetime,date,time
+from datetime import datetime,date,time,timedelta
 import dateutil
 import dateutil.parser
 from lxml import etree as ET
@@ -10,6 +10,8 @@ import StringIO
 from io import BytesIO
 
 import boto3
+
+debug = True
 
 maxfeeditems=200
 maxfeedsecs = 60*60*2 # 2 hours 
@@ -60,10 +62,22 @@ def writeItemsToFeed(feedroot,items):
 	i=1
 	for olditem in feedroot.xpath("/rss/channel/item"):
 		itemnr = len(items)+i #need to consider the newly arrived items
-		itemdate = dateutil.parser.parse(olditem.find('pubDate').text)
+		remove=False
+		try:
+			itemdate = dateutil.parser.parse(olditem.find('pubDate').text).replace(tzinfo=None)
+			if itemnr > maxfeeditems and (timenow - itemdate) > timedelta(seconds=maxfeedsecs) :
+				remove=True
+		except TypeError as te:
+			print("problem pruning item {} (nr:{} date:{} date:{} ) ({}) ".format(olditem,itemnr,itemdate,timenow,te))
+		except AttributeError as ae:
+			print("problem getting date of item {} ({}) .. pruning anyway".format( ET.tostring(olditem),ae) )
+			remove = itemnr > maxfeeditems
 		
-		if len(items)+i > maxfeeditems and (timenow - itemdate) > maxfeedsecs * 1000:
-			olditem.getroot().remove(olditem)
+		if remove:
+			olditem.getparent().remove(olditem)
+			if debug:
+				print("removed item {} from feed".format(olditem))
+			
 		i=i+1
 
 	existingitems = feedroot.xpath("/rss/channel/item")
@@ -78,7 +92,6 @@ def writeItemsToFeed(feedroot,items):
 		idx = len(parent)
 
 	for i,newitem in enumerate(items):
-		if i<maxfeeditems or 
 		parent.insert(idx, newitem)
 
 	#update pubdates
@@ -113,7 +126,9 @@ def updateRss(feedupdate):
 	for alert in alerts:
 		capxml = alert["capXml"]
 		alertId = alert["hubRecordKey"]
-		print("storing alert {}".format(alertId))
+		
+		if debug:
+			print("storing alert {} for feed {}".format(alertId,feedid))
 
 		temp = StringIO.StringIO(capxml.encode('utf-8'))
 		capdom = ET.parse(temp)
@@ -131,8 +146,9 @@ def updateRss(feedupdate):
 	s3 = boto3.client('s3')
 	
 	s3keyold =  "{}/rss.xml".format(feedid)
-	s3bucketold = "test-rss-output"
-	print("downloading old feed {} from S3 bucket {}".format(s3keyold,s3bucketold))
+	s3bucketold = "alert-feeds"
+	if debug:
+		print("downloading old feed {} from S3 bucket {}".format(s3keyold,s3bucketold))
 	
 	response = s3.get_object(Bucket=s3bucketold,Key=s3keyold)
 	parser = ET.XMLParser(remove_blank_text=True)
@@ -146,8 +162,9 @@ def updateRss(feedupdate):
 		outdata.seek(0)
 		
 		s3key = "{}/rss.xml".format(feedid)
-		s3bucket = 'test-rss-output'
-		print("writing back updated RSS feed to {} {}".format(s3bucket,s3key))
+		s3bucket = 'alert-feeds'
+		if debug:
+			print("writing back updated RSS feed to {} {}".format(s3bucket,s3key))
 		s3.put_object(Bucket=s3bucket,Key=s3key,ACL='public-read',ContentType="application/rss+xml",Body=outdata.read())	
 
 
@@ -158,7 +175,8 @@ def lambda_handler(event, context):
 	
 	records = event['Records']
 	
-	print("start kinesis processing of {} records".format( str(len(records)) ))
+	if debug:
+		print("start kinesis processing of {} records".format( str(len(records)) ))
 
 
 	# we group the alerts by feed 
@@ -174,7 +192,8 @@ def lambda_handler(event, context):
 		#kinesis info
 		eventid=record["eventID"]
 	
-		print("processing feedid:{}, eventID:{}".format(feedinfo["id"],eventid))
+		if debug:
+			print("processing feedid:{}, eventID:{}".format(feedinfo["id"],eventid))
 
 		if feedinfo["id"] in rssfeedupdates:
 			rssfeedupdates[feedinfo["id"]]["alerts"].append(   alert )

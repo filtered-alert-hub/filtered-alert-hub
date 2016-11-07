@@ -3,15 +3,33 @@ from datetime import datetime
 import json
 import urllib
 import boto3
+import botocore
+
 from boto3.dynamodb.conditions import Key, Attr
-from lxml import etree
+from lxml import etree,objectify
 import json
+from xml.etree.ElementTree import fromstring
+from xmljson import badgerfish as bf
 
 print('Loading function')
 
 test = False
 debug = True
 
+def removeNamespaces(capXML):
+	root = etree.fromstring(capXML)
+
+	####    
+	for elem in root.getiterator():
+		if not hasattr(elem.tag, 'find'): continue  # (1)
+		i = elem.tag.find('}')
+		if i >= 0:
+			elem.tag = elem.tag[i+1:]
+	objectify.deannotate(root, cleanup_namespaces=True)
+	####
+
+	return root
+	
 def loadandvalidateCAP(capXML):
 	
 	if "urn:oasis:names:tc:emergency:cap:1.1" in capXML:
@@ -21,7 +39,7 @@ def loadandvalidateCAP(capXML):
 		capschema = "xsds/cap1-2.xsd"
 		namespace = "urn:oasis:names:tc:emergency:cap:1.2"
 	else:
-		raise Exception("unknown schema")
+		raise Exception("unknown schema: {}".format( capXML[0:100] ))
    
 	xmlschema_doc = etree.parse(capschema)
 	xmlschema = etree.XMLSchema(xmlschema_doc)	
@@ -46,7 +64,7 @@ def lambda_handler(event, context):
 	for record in event["Records"]:
 	
 		bucket = record["s3"]["bucket"]["name"]
-		key = record["s3"]["object"]["key"]
+		key = urllib.unquote(record["s3"]["object"]["key"])
 		if debug: 
 			print("received record in S3. b:{} k:{}".format(bucket,key))
 		
@@ -62,10 +80,11 @@ def lambda_handler(event, context):
 		hubrecordkey = "{}/{}.xml".format(folder, timekey)
 		
 		if debug:
-			print("copying {}/{} to {}/{}".format(bucket,key,hubbucket,hubrecordkey))
+			print("bucket {} key {} folder {} ".format(bucket,key,folder))
+			print("copying b:{}/k:{} to b:{}/k:{}".format(bucket,key,hubbucket,hubrecordkey))
 
 		if test:
-			1==1
+			pass
 		else:
 			s3.copy( { 'Bucket' : bucket , 'Key' : key } , hubbucket, hubrecordkey )
 		
@@ -84,43 +103,59 @@ def lambda_handler(event, context):
 		if debug:
 			print("checking records {} for duplication ".format(id))
 
-		
-		dynamodb = session.resource('dynamodb') 
-		table = dynamodb.Table('wah-received-alerts')
-		response = table.query(
-			KeyConditionExpression=Key('id').eq(id)
-		)
-		
-		if response["Count"]>0:
-			print("{} already processed.. doing nothing".format(id))
-			return
+		if not test:
+			dynamodb = session.resource('dynamodb') 
+			table = dynamodb.Table('wah-received-alerts')
+			response = table.query(
+				KeyConditionExpression=Key('id').eq(id)
+			)
+			
+			if response["Count"]>0:
+				print("{} already processed.. doing nothing".format(id))
+				return
 
-		table.put_item(  Item={ 'id': id } )
+			table.put_item(  Item={ 'id': id } )
 		
 		# send message on to area filter
 		topicArn = "arn:aws:sns:eu-west-1:381798314226:wah_post-alert-capture";
-
-		highlevelfolder = folder[0:folder.lfind('/')]
+		highlevelfolder =  folder[0:folder.find('/')] if '/' in folder else folder
 		sourceMetadataObjectKey = "{}/metadata.json".format(highlevelfolder)
 
 		if debug: 
 			print("getting source metadata from {} {}".format(bucket,sourceMetadataObjectKey))
 		
-		response = s3.get_object(Bucket=bucket,Key=sourceMetadataObjectKey)
-		sourceMetadata= json.load(response["Body"])
+		try:
+			response = s3.get_object(Bucket=bucket,Key=sourceMetadataObjectKey)
+			sourceMetadata= json.load(response["Body"])
+			if 'source' in sourceMetadata: # some metadata seem to have the source attribute, others not
+				sourceMetadata = sourceMetadata["source"]
+
+			alert = { "alert" : { 
+				'sourceName' : sourceMetadata['sourceName'],
+				'sourceIsOfficial' : sourceMetadata['sourceIsOfficial'],
+				'sourceLanguage' : sourceMetadata['sourceLanguage'],
+				'folderName' : folder,
+				'inputRecordKey' : key,
+				'inputBucketName' : bucket,
+				'hubRecordKey' : hubrecordkey,
+				'hubBucketName' : hubbucket,
+				'capNamespaceUri' : namespace,
+				'capXml' : capXML,
+				'capJson' : bf.data( removeNamespaces(capXML)  ) # JSON representation of alert for later use
+			}}
+
+		except botocore.exceptions.ClientError as ce:
+			print("erorr getting source metadata {} {} ({})".format(bucket,sourceMetadataObjectKey,ce))
+			return False
+		except ValueError as ve:
+			print("error parsing JSON metadata for {} {} ({})".format(bucket,sourceMetadataObjectKey,ve))
+			return False
+		except KeyError as ke:
+			print("{} error getting source metadata: {}".format(ke,json.dumps(sourceMetadata)))
+			return False
 		
-		alert = { "alert" : { 
-			'sourceName' : sourceMetadata['sourceName'],
-			'sourceIsOfficial' : sourceMetadata['sourceIsOfficial'],
-			'sourceLanguage' : sourceMetadata['sourceLanguage'],
-			'folderName' : folder,
-			'inputRecordKey' : key,
-			'inputBucketName' : bucket,
-			'hubRecordKey' : hubrecordkey,
-			'hubBucketName' : hubbucket,
-			'capNamespaceUri' : namespace,
-			'capXml' : capXML
-		}}
+		#if debug: 
+		#	print(json.dumps( alert["alert"]["capJson"] ))
 		
 		sns = session.client('sns')
 		sns.publish(
@@ -128,5 +163,6 @@ def lambda_handler(event, context):
 			Message = json.dumps(alert)
 		)
 		
+	
 		if debug:
-			print("sent new alert {} on to arn: {}".format(hubRecordKey,topicArn))
+			print("sent new alert {} on to arn: {}".format(hubrecordkey,topicArn))
