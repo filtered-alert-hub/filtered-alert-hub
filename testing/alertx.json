@@ -1,0 +1,145 @@
+{
+	"alert": {
+		"sourceLanguage": "en",
+		"sourceName": "Anguilla: Disaster Management Anguilla",
+		"capXml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<cap:alert xmlns:cap=\"urn:oasis:names:tc:emergency:cap:1.1\">\n  <cap:identifier>urn:oid:2.49.0.3.1.127.2016.3.10.10.10.53.13.217</cap:identifier>\n  <cap:sender>Eliot.Christian@redcross.org</cap:sender>\n  <cap:sent>2016-03-10T22:53:13.217</cap:sent>\n  <cap:status>Actual</cap:status>\n  <cap:msgType>Alert</cap:msgType>\n  <cap:scope>Public</cap:scope>\n  <cap:info>\n    <cap:language>en</cap:language>\n    <cap:category>Geo</cap:category>\n    <cap:event>flood</cap:event>\n    <cap:responseType>Shelter</cap:responseType>\n    <cap:urgency>Immediate</cap:urgency>\n    <cap:severity>Extreme</cap:severity>\n    <cap:certainty>Observed</cap:certainty>\n    <cap:expires>2016-03-11T08:00:00-00:00</cap:expires>\n    <cap:senderName>New Zealand Red Cross</cap:senderName>\n    <cap:headline>Flood warning for low-lying areas of Algiers in Algeria</cap:headline>\n    <cap:description>Flood warning for low-lying areas of Algiers in Algeria</cap:description>\n    <cap:instruction>Residents in low-lying areas should exercise caution. Avoid low areas. Persons should not be out on the roads during heavy rainfall. If you must be outside, use extreme caution. Do not drive your vehicle into areas where water covers the roadway. Vehicles caught in rising waters should be abandoned quickly. Continue listening to local media as updates will be provided if conditions change significantly.</cap:instruction>\n    <cap:area>\n      <cap:areaDesc>Algiers in Algeria</cap:areaDesc>\n      <cap:polygon>36.615348,2.9000655 36.615348,3.2200655 36.935348,3.2200655 36.935348,2.9000655 36.615348,2.9000655</cap:polygon>\n      <cap:circle/>\n    </cap:area>\n  </cap:info>\n    <cap:info>\n    <cap:language>en</cap:language>\n    <cap:category>Geo</cap:category>\n    <cap:event>flood</cap:event>\n    <cap:responseType>Shelter</cap:responseType>\n    <cap:urgency>Immediate</cap:urgency>\n    <cap:severity>Extreme</cap:severity>\n    <cap:certainty>Observed</cap:certainty>\n    <cap:expires>2016-03-11T08:00:00-00:00</cap:expires>\n    <cap:senderName>New Zealand Red Cross</cap:senderName>\n    <cap:headline>Flood warning for low-lying areas of Algiers in Algeria</cap:headline>\n    <cap:description>Flood warning for low-lying areas of Algiers in Algeria</cap:description>\n    <cap:instruction>Residents in low-lying areas should exercise caution. Avoid low areas. Persons should not be out on the roads during heavy rainfall. If you must be outside, use extreme caution. Do not drive your vehicle into areas where water covers the roadway. Vehicles caught in rising waters should be abandoned quickly. Continue listening to local media as updates will be provided if conditions change significantly.</cap:instruction>\n    <cap:area>\n      <cap:areaDesc>Algiers in Algeria</cap:areaDesc>\n      <cap:polygon>36.615348,2.9000655 36.615348,3.2200655 36.935348,3.2200655 36.935348,2.9000655 36.615348,2.9000655</cap:polygon>\n      <cap:circle/>\n    </cap:area>\n\t<cap:area>\n      <cap:areaDesc>Algiers in Algeria</cap:areaDesc>\n      <cap:polygon>36.615348,2.9000655 36.615348,3.2200655 36.935348,3.2200655 36.935348,2.9000655 36.615348,2.9000655</cap:polygon>\n      <cap:circle/>\n    </cap:area>\n  </cap:info>\n\n</cap:alert>\n",
+		"capNamespaceUri": "urn:oasis:names:tc:emergency:cap:1.1",
+		"inputBucketName": "alert-hub-input",
+		"inputRecordKey": "ai-dma-en/HappyFace.jpg",
+		"hubBucketName": "alert-hub",
+		"capJson": {
+			"alert": {
+				"identifier": {
+					"$": "urn:oid:2.49.0.3.1.127.2016.3.10.10.10.53.13.217"
+				},
+				"sender": {
+					"$": "Eliot.Christian@redcross.org"
+				},
+				"sent": {
+					"$": "2016-03-10T22:53:13.217"
+				},
+				"status": {
+					"$": "Actual"
+				},
+				"msgType": {
+					"$": "Alert"
+				},
+				"scope": {
+					"$": "Public"
+				},
+				"info": [{
+					"language": {
+						"$": "en"
+					},
+					"category": {
+						"$": "Geo"
+					},
+					"event": {
+						"$": "flood"
+					},
+					"responseType": {
+						"$": "Shelter"
+					},
+					"urgency": {
+						"$": "Immediate"
+					},
+					"severity": {
+						"$": "Extreme"
+					},
+					"certainty": {
+						"$": "Observed"
+					},
+					"expires": {
+						"$": "2016-03-11T08:00:00-00:00"
+					},
+					"senderName": {
+						"$": "New Zealand Red Cross"
+					},
+					"headline": {
+						"$": "Flood warning for low-lying areas of Algiers in Algeria"
+					},
+					"description": {
+						"$": "Flood warning for low-lying areas of Algiers in Algeria"
+					},
+					"instruction": {
+						"$": "Residents in low-lying areas should exercise caution. Avoid low areas. Persons should not be out on the roads during heavy rainfall. If you must be outside, use extreme caution. Do not drive your vehicle into areas where water covers the roadway. Vehicles caught in rising waters should be abandoned quickly. Continue listening to local media as updates will be provided if conditions change significantly."
+					},
+					"area": {
+						"areaDesc": {
+							"$": "Algiers in Algeria"
+						},
+						"polygon": {
+							"$": "36.615348,2.9000655 36.615348,3.2200655 36.935348,3.2200655 36.935348,2.9000655 36.615348,2.9000655"
+						},
+						"circle": {
+							
+						}
+					}
+				},
+				{
+					"language": {
+						"$": "en"
+					},
+					"category": {
+						"$": "Geo"
+					},
+					"event": {
+						"$": "flood"
+					},
+					"responseType": {
+						"$": "Shelter"
+					},
+					"urgency": {
+						"$": "Immediate"
+					},
+					"severity": {
+						"$": "Extreme"
+					},
+					"certainty": {
+						"$": "Observed"
+					},
+					"expires": {
+						"$": "2016-03-11T08:00:00-00:00"
+					},
+					"senderName": {
+						"$": "New Zealand Red Cross"
+					},
+					"headline": {
+						"$": "Flood warning for low-lying areas of Algiers in Algeria"
+					},
+					"description": {
+						"$": "Flood warning for low-lying areas of Algiers in Algeria"
+					},
+					"instruction": {
+						"$": "Residents in low-lying areas should exercise caution. Avoid low areas. Persons should not be out on the roads during heavy rainfall. If you must be outside, use extreme caution. Do not drive your vehicle into areas where water covers the roadway. Vehicles caught in rising waters should be abandoned quickly. Continue listening to local media as updates will be provided if conditions change significantly."
+					},
+					"area": [{
+						"areaDesc": {
+							"$": "Algiers in Algeria"
+						},
+						"polygon": {
+							"$": "36.615348,2.9000655 36.615348,3.2200655 36.935348,3.2200655 36.935348,2.9000655 36.615348,2.9000655"
+						},
+						"circle": {
+							
+						}
+					},
+					{
+						"areaDesc": {
+							"$": "Algiers in Algeria"
+						},
+						"polygon": {
+							"$": "36.615348,2.9000655 36.615348,3.2200655 36.935348,3.2200655 36.935348,2.9000655 36.615348,2.9000655"
+						},
+						"circle": {
+							
+						}
+					}]
+				}]
+			}
+		},
+		"folderName": "ai-dma-en",
+		"sourceIsOfficial": true,
+		"hubRecordKey": "ai-dma-en/2016-11-06-14-24-03-571.xml"
+	}
+}
