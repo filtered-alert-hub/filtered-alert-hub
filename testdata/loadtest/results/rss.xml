@@ -1,0 +1,780 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>all testfeeds</title>
+    <link>https://s3-eu-west-1.amazonaws.com/test-rss-output/all/rss.xml</link>
+    <description>all testfeeds</description>
+    <language>all</language>
+    <copyright>public domain</copyright>
+    <pubDate>Thu, 08 Sep 2016 22:18:34 GMT</pubDate>
+    <dc:creator>Alert Hub (eliot.christian@redCross.org)</dc:creator>
+    <dc:date>2016-09-08T22:18:34.274894Z</dc:date>
+    <dc:language>all</dc:language>
+    <dc:rights>public domain</dc:rights>
+    <image>
+      <title>all testfeeds</title>
+      <url>https://s3-eu-west-1.amazonaws.com/test-rss-output/capLogo.jpg</url>
+      <link>https://s3-eu-west-1.amazonaws.com/test-rss-output/all/rss.xml</link>
+    </image>
+    <item>
+      <title>Flood warning for low-lying areas near Wellington, NZ.</title>
+      <link>https://alert-hub.s3.amazonaws.com/msg_test-public_en_noof_nohp.json</link>
+      <description>Flood warning overnight for low-lying areas near Wellington, NZ.</description>
+      <category>Geo</category>
+      <pubDate>Thu, 10 Mar 2016 22:12:03 </pubDate>
+      <guid>msg_test-public_en_noof_nohp-1</guid>
+      <dc:creator>Eliot.Christian@redcross.org</dc:creator>
+      <dc:date>2016-03-10T22:12:03.740000</dc:date>
+    </item>
+    <item>
+      <title>Flood warning for low-lying areas near Wellington, NZ.</title>
+      <link>https://alert-hub.s3.amazonaws.com/msg_test-public_fr_of_nohp.json</link>
+      <description>Flood warning overnight for low-lying areas near Wellington, NZ.</description>
+      <category>Met</category>
+      <pubDate>Thu, 10 Mar 2016 22:12:03 </pubDate>
+      <guid>msg_test-public_fr_of_nohp-2</guid>
+      <dc:creator>Eliot.Christian@redcross.org</dc:creator>
+      <dc:date>2016-03-10T22:12:03.770000</dc:date>
+    </item>
+    <item>
+      <title>Flood warning for low-lying areas near Wellington, NZ.</title>
+      <link>https://alert-hub.s3.amazonaws.com/msg_test-public_fr_of_hp.json</link>
+      <description>Flood warning overnight for low-lying areas near Wellington, NZ.</description>
+      <category>Met</category>
+      <pubDate>Thu, 10 Mar 2016 22:12:03 </pubDate>
+      <guid>msg_test-public_fr_of_hp-2</guid>
+      <dc:creator>Eliot.Christian@redcross.org</dc:creator>
+      <dc:date>2016-03-10T22:12:03.770000</dc:date>
+    </item>
+    <item>
+      <title>Flood warning for low-lying areas near Wellington, NZ.</title>
+      <link>https://alert-hub.s3.amazonaws.com/msg_actual-public_en_noof_hp.json</link>
+      <description>Flood warning overnight for low-lying areas near Wellington, NZ.</description>
+      <category>Met</category>
+      <pubDate>Thu, 10 Mar 2016 22:12:03 </pubDate>
+      <guid>msg_actual-public_en_noof_hp-8</guid>
+      <dc:creator>Eliot.Christian@redcross.org</dc:creator>
+      <dc:date>2016-03-10T22:12:03.770000</dc:date>
+    </item>
+    <item>
+      <title>Flood warning for low-lying areas near Wellington, NZ.</title>
+      <link>https://alert-hub.s3.amazonaws.com/msg_actual-public_en_noof_hp.json</link>
+      <description>Flood warning overnight for low-lying areas near Wellington, NZ.</description>
+      <category>Met</category>
+      <pubDate>Thu, 10 Mar 2016 22:12:03 </pubDate>
+      <guid>msg_actual-public_en_noof_hp-6</guid>
+      <dc:creator>Eliot.Christian@redcross.org</dc:creator>
+      <dc:date>2016-03-10T22:12:03.770000</dc:date>
+    </item>
+    <item>
+      <title>Flood warning for low-lying areas near Wellington, NZ.</title>
+      <link>https://alert-hub.s3.amazonaws.com/msg_test-public_fr_of_nohp.json</link>
+      <description>Flood warning overnight for low-lying areas near Wellington, NZ.</description>
+      <category>Met</category>
+      <pubDate>Thu, 10 Mar 2016 22:12:03 </pubDate>
+      <guid>msg_test-public_fr_of_nohp-9</guid>
+      <dc:creator>Eliot.Christian@redcross.org</dc:creator>
+      <dc:date>2016-03-10T22:12:03.770000</dc:date>
+    </item>
+    <item>
+      <title>Flood warning for low-lying areas near Wellington, NZ.</title>
+      <link>https://alert-hub.s3.amazonaws.com/msg_test-public_en_of_nohp.json</link>
+      <description>Flood warning overnight for low-lying areas near Wellington, NZ.</description>
+      <category>Geo</category>
+      <pubDate>Thu, 10 Mar 2016 22:12:03 </pubDate>
+      <guid>msg_msg_test-public_en_of_nohp-2</guid>
+      <dc:creator>Eliot.Christian@redcross.org</dc:creator>
+      <dc:date>2016-03-10T22:12:03.740000</dc:date>
+    </item>
+    <item>
+      <title>Flood warning for low-lying areas near Wellington, NZ.</title>
+      <link>https://alert-hub.s3.amazonaws.com/msg_test-public_fr_of_nohp.json</link>
+      <description>Flood warning overnight for low-lying areas near Wellington, NZ.</description>
+      <category>Met</category>
+      <pubDate>Thu, 10 Mar 2016 22:12:03 </pubDate>
+      <guid>msg_test-public_fr_of_nohp-3</guid>
+      <dc:creator>Eliot.Christian@redcross.org</dc:creator>
+      <dc:date>2016-03-10T22:12:03.770000</dc:date>
+    </item>
+    <item>
+      <title>Flood warning for low-lying areas near Wellington, NZ.</title>
+      <link>https://alert-hub.s3.amazonaws.com/msg_test-public_en_of_nohp.json</link>
+      <description>Flood warning overnight for low-lying areas near Wellington, NZ.</description>
+      <category>Geo</category>
+      <pubDate>Thu, 10 Mar 2016 22:12:03 </pubDate>
+      <guid>msg_msg_test-public_en_of_nohp-4</guid>
+      <dc:creator>Eliot.Christian@redcross.org</dc:creator>
+      <dc:date>2016-03-10T22:12:03.740000</dc:date>
+    </item>
+    <item>
+      <title>Flood warning for low-lying areas near Wellington, NZ.</title>
+      <link>https://alert-hub.s3.amazonaws.com/msg_public-actual_en_of_nohp.json</link>
+      <description>Flood warning overnight for low-lying areas near Wellington, NZ.</description>
+      <category>Met</category>
+      <pubDate>Thu, 10 Mar 2016 22:12:04 </pubDate>
+      <guid>public-actual_en_of_nohp-4</guid>
+      <dc:creator>Eliot.Christian@redcross.org</dc:creator>
+      <dc:date>2016-03-10T22:12:04.910000</dc:date>
+    </item>
+    <item>
+      <title>Flood warning for low-lying areas near Wellington, NZ.</title>
+      <link>https://alert-hub.s3.amazonaws.com/msg_actual-public_fr_of_nohp.json</link>
+      <description>Flood warning overnight for low-lying areas near Wellington, NZ.</description>
+      <category>Met</category>
+      <pubDate>Thu, 10 Mar 2016 22:12:03 </pubDate>
+      <guid>msg_actual-public_fr_of_nohp-5</guid>
+      <dc:creator>Eliot.Christian@redcross.org</dc:creator>
+      <dc:date>2016-03-10T22:12:03.770000</dc:date>
+    </item>
+    <item>
+      <title>Flood warning for low-lying areas near Wellington, NZ.</title>
+      <link>https://alert-hub.s3.amazonaws.com/msg_actual-public_en_noof_hp.json</link>
+      <description>Flood warning overnight for low-lying areas near Wellington, NZ.</description>
+      <category>Met</category>
+      <pubDate>Thu, 10 Mar 2016 22:12:03 </pubDate>
+      <guid>msg_actual-public_en_noof_hp-7</guid>
+      <dc:creator>Eliot.Christian@redcross.org</dc:creator>
+      <dc:date>2016-03-10T22:12:03.770000</dc:date>
+    </item>
+    <item>
+      <title>Flood warning for low-lying areas near Wellington, NZ.</title>
+      <link>https://alert-hub.s3.amazonaws.com/msg_test-public_fr_of_nohp.json</link>
+      <description>Flood warning overnight for low-lying areas near Wellington, NZ.</description>
+      <category>Met</category>
+      <pubDate>Thu, 10 Mar 2016 22:12:03 </pubDate>
+      <guid>msg_test-public_fr_of_nohp-7</guid>
+      <dc:creator>Eliot.Christian@redcross.org</dc:creator>
+      <dc:date>2016-03-10T22:12:03.770000</dc:date>
+    </item>
+    <item>
+      <title>Flood warning for low-lying areas near Wellington, NZ.</title>
+      <link>https://alert-hub.s3.amazonaws.com/msg_test-public_fr_of_nohp.json</link>
+      <description>Flood warning overnight for low-lying areas near Wellington, NZ.</description>
+      <category>Met</category>
+      <pubDate>Thu, 10 Mar 2016 22:12:03 </pubDate>
+      <guid>msg_test-public_fr_of_nohp-8</guid>
+      <dc:creator>Eliot.Christian@redcross.org</dc:creator>
+      <dc:date>2016-03-10T22:12:03.770000</dc:date>
+    </item>
+    <item>
+      <title>Flood warning for low-lying areas near Wellington, NZ.</title>
+      <link>https://alert-hub.s3.amazonaws.com/msg_test-public_fr_of_nohp.json</link>
+      <description>Flood warning overnight for low-lying areas near Wellington, NZ.</description>
+      <category>Met</category>
+      <pubDate>Thu, 10 Mar 2016 22:12:03 </pubDate>
+      <guid>msg_test-public_fr_of_nohp-6</guid>
+      <dc:creator>Eliot.Christian@redcross.org</dc:creator>
+      <dc:date>2016-03-10T22:12:03.770000</dc:date>
+    </item>
+    <item>
+      <title>Flood warning for low-lying areas near Wellington, NZ.</title>
+      <link>https://alert-hub.s3.amazonaws.com/msg_test-public_fr_of_nohp.json</link>
+      <description>Flood warning overnight for low-lying areas near Wellington, NZ.</description>
+      <category>Met</category>
+      <pubDate>Thu, 10 Mar 2016 22:12:03 </pubDate>
+      <guid>msg_test-public_fr_of_nohp-4</guid>
+      <dc:creator>Eliot.Christian@redcross.org</dc:creator>
+      <dc:date>2016-03-10T22:12:03.770000</dc:date>
+    </item>
+    <item>
+      <title>Flood warning for low-lying areas near Wellington, NZ.</title>
+      <link>https://alert-hub.s3.amazonaws.com/msg_test-public_fr_of_nohp.json</link>
+      <description>Flood warning overnight for low-lying areas near Wellington, NZ.</description>
+      <category>Met</category>
+      <pubDate>Thu, 10 Mar 2016 22:12:03 </pubDate>
+      <guid>msg_test-public_fr_of_nohp-1</guid>
+      <dc:creator>Eliot.Christian@redcross.org</dc:creator>
+      <dc:date>2016-03-10T22:12:03.770000</dc:date>
+    </item>
+    <item>
+      <title>Flood warning for low-lying areas near Wellington, NZ.</title>
+      <link>https://alert-hub.s3.amazonaws.com/msg_test-public_fr_of_hp.json</link>
+      <description>Flood warning overnight for low-lying areas near Wellington, NZ.</description>
+      <category>Met</category>
+      <pubDate>Thu, 10 Mar 2016 22:12:03 </pubDate>
+      <guid>msg_test-public_fr_of_hp-9</guid>
+      <dc:creator>Eliot.Christian@redcross.org</dc:creator>
+      <dc:date>2016-03-10T22:12:03.770000</dc:date>
+    </item>
+    <item>
+      <title>Flood warning for low-lying areas near Wellington, NZ.</title>
+      <link>https://alert-hub.s3.amazonaws.com/msg_test-public_fr_of_hp.json</link>
+      <description>Flood warning overnight for low-lying areas near Wellington, NZ.</description>
+      <category>Met</category>
+      <pubDate>Thu, 10 Mar 2016 22:12:03 </pubDate>
+      <guid>msg_test-public_fr_of_hp-8</guid>
+      <dc:creator>Eliot.Christian@redcross.org</dc:creator>
+      <dc:date>2016-03-10T22:12:03.770000</dc:date>
+    </item>
+    <item>
+      <title>Flood warning for low-lying areas near Wellington, NZ.</title>
+      <link>https://alert-hub.s3.amazonaws.com/msg_test-public_fr_of_hp.json</link>
+      <description>Flood warning overnight for low-lying areas near Wellington, NZ.</description>
+      <category>Met</category>
+      <pubDate>Thu, 10 Mar 2016 22:12:03 </pubDate>
+      <guid>msg_test-public_fr_of_hp-7</guid>
+      <dc:creator>Eliot.Christian@redcross.org</dc:creator>
+      <dc:date>2016-03-10T22:12:03.770000</dc:date>
+    </item>
+    <item>
+      <title>Flood warning for low-lying areas near Wellington, NZ.</title>
+      <link>https://alert-hub.s3.amazonaws.com/msg_test-public_fr_of_hp.json</link>
+      <description>Flood warning overnight for low-lying areas near Wellington, NZ.</description>
+      <category>Met</category>
+      <pubDate>Thu, 10 Mar 2016 22:12:03 </pubDate>
+      <guid>msg_test-public_fr_of_hp-6</guid>
+      <dc:creator>Eliot.Christian@redcross.org</dc:creator>
+      <dc:date>2016-03-10T22:12:03.770000</dc:date>
+    </item>
+    <item>
+      <title>Flood warning for low-lying areas near Wellington, NZ.</title>
+      <link>https://alert-hub.s3.amazonaws.com/msg_test-public_fr_of_hp.json</link>
+      <description>Flood warning overnight for low-lying areas near Wellington, NZ.</description>
+      <category>Met</category>
+      <pubDate>Thu, 10 Mar 2016 22:12:03 </pubDate>
+      <guid>msg_test-public_fr_of_hp-4</guid>
+      <dc:creator>Eliot.Christian@redcross.org</dc:creator>
+      <dc:date>2016-03-10T22:12:03.770000</dc:date>
+    </item>
+    <item>
+      <title>Flood warning for low-lying areas near Wellington, NZ.</title>
+      <link>https://alert-hub.s3.amazonaws.com/msg_test-public_fr_of_hp.json</link>
+      <description>Flood warning overnight for low-lying areas near Wellington, NZ.</description>
+      <category>Met</category>
+      <pubDate>Thu, 10 Mar 2016 22:12:03 </pubDate>
+      <guid>msg_test-public_fr_of_hp-5</guid>
+      <dc:creator>Eliot.Christian@redcross.org</dc:creator>
+      <dc:date>2016-03-10T22:12:03.770000</dc:date>
+    </item>
+    <item>
+      <title>Flood warning for low-lying areas near Wellington, NZ.</title>
+      <link>https://alert-hub.s3.amazonaws.com/msg_test-public_fr_of_hp.json</link>
+      <description>Flood warning overnight for low-lying areas near Wellington, NZ.</description>
+      <category>Met</category>
+      <pubDate>Thu, 10 Mar 2016 22:12:03 </pubDate>
+      <guid>msg_test-public_fr_of_hp-3</guid>
+      <dc:creator>Eliot.Christian@redcross.org</dc:creator>
+      <dc:date>2016-03-10T22:12:03.770000</dc:date>
+    </item>
+    <item>
+      <title>Flood warning for low-lying areas near Wellington, NZ.</title>
+      <link>https://alert-hub.s3.amazonaws.com/msg_test-public_fr_of_hp.json</link>
+      <description>Flood warning overnight for low-lying areas near Wellington, NZ.</description>
+      <category>Met</category>
+      <pubDate>Thu, 10 Mar 2016 22:12:03 </pubDate>
+      <guid>msg_test-public_fr_of_hp-1</guid>
+      <dc:creator>Eliot.Christian@redcross.org</dc:creator>
+      <dc:date>2016-03-10T22:12:03.770000</dc:date>
+    </item>
+    <item>
+      <title>Flood warning for low-lying areas near Wellington, NZ.</title>
+      <link>https://alert-hub.s3.amazonaws.com/msg_test-public_en_of_nohp.json</link>
+      <description>Flood warning overnight for low-lying areas near Wellington, NZ.</description>
+      <category>Geo</category>
+      <pubDate>Thu, 10 Mar 2016 22:12:03 </pubDate>
+      <guid>msg_msg_test-public_en_of_nohp-9</guid>
+      <dc:creator>Eliot.Christian@redcross.org</dc:creator>
+      <dc:date>2016-03-10T22:12:03.740000</dc:date>
+    </item>
+    <item>
+      <title>Flood warning for low-lying areas near Wellington, NZ.</title>
+      <link>https://alert-hub.s3.amazonaws.com/msg_test-public_en_of_nohp.json</link>
+      <description>Flood warning overnight for low-lying areas near Wellington, NZ.</description>
+      <category>Geo</category>
+      <pubDate>Thu, 10 Mar 2016 22:12:03 </pubDate>
+      <guid>msg_msg_test-public_en_of_nohp-8</guid>
+      <dc:creator>Eliot.Christian@redcross.org</dc:creator>
+      <dc:date>2016-03-10T22:12:03.740000</dc:date>
+    </item>
+    <item>
+      <title>Flood warning for low-lying areas near Wellington, NZ.</title>
+      <link>https://alert-hub.s3.amazonaws.com/msg_test-public_en_of_nohp.json</link>
+      <description>Flood warning overnight for low-lying areas near Wellington, NZ.</description>
+      <category>Geo</category>
+      <pubDate>Thu, 10 Mar 2016 22:12:03 </pubDate>
+      <guid>msg_msg_test-public_en_of_nohp-7</guid>
+      <dc:creator>Eliot.Christian@redcross.org</dc:creator>
+      <dc:date>2016-03-10T22:12:03.740000</dc:date>
+    </item>
+    <item>
+      <title>Flood warning for low-lying areas near Wellington, NZ.</title>
+      <link>https://alert-hub.s3.amazonaws.com/msg_test-public_en_of_nohp.json</link>
+      <description>Flood warning overnight for low-lying areas near Wellington, NZ.</description>
+      <category>Geo</category>
+      <pubDate>Thu, 10 Mar 2016 22:12:03 </pubDate>
+      <guid>msg_msg_test-public_en_of_nohp-6</guid>
+      <dc:creator>Eliot.Christian@redcross.org</dc:creator>
+      <dc:date>2016-03-10T22:12:03.740000</dc:date>
+    </item>
+    <item>
+      <title>Flood warning for low-lying areas near Wellington, NZ.</title>
+      <link>https://alert-hub.s3.amazonaws.com/msg_test-public_en_of_nohp.json</link>
+      <description>Flood warning overnight for low-lying areas near Wellington, NZ.</description>
+      <category>Geo</category>
+      <pubDate>Thu, 10 Mar 2016 22:12:03 </pubDate>
+      <guid>msg_msg_test-public_en_of_nohp-3</guid>
+      <dc:creator>Eliot.Christian@redcross.org</dc:creator>
+      <dc:date>2016-03-10T22:12:03.740000</dc:date>
+    </item>
+    <item>
+      <title>Flood warning for low-lying areas near Wellington, NZ.</title>
+      <link>https://alert-hub.s3.amazonaws.com/msg_test-public_en_of_nohp.json</link>
+      <description>Flood warning overnight for low-lying areas near Wellington, NZ.</description>
+      <category>Geo</category>
+      <pubDate>Thu, 10 Mar 2016 22:12:03 </pubDate>
+      <guid>msg_msg_test-public_en_of_nohp-1</guid>
+      <dc:creator>Eliot.Christian@redcross.org</dc:creator>
+      <dc:date>2016-03-10T22:12:03.740000</dc:date>
+    </item>
+    <item>
+      <title>Flood warning for low-lying areas near Wellington, NZ.</title>
+      <link>https://alert-hub.s3.amazonaws.com/msg_test-public_en_noof_nohp.json</link>
+      <description>Flood warning overnight for low-lying areas near Wellington, NZ.</description>
+      <category>Geo</category>
+      <pubDate>Thu, 10 Mar 2016 22:12:03 </pubDate>
+      <guid>msg_test-public_en_noof_nohp-9</guid>
+      <dc:creator>Eliot.Christian@redcross.org</dc:creator>
+      <dc:date>2016-03-10T22:12:03.740000</dc:date>
+    </item>
+    <item>
+      <title>Flood warning for low-lying areas near Wellington, NZ.</title>
+      <link>https://alert-hub.s3.amazonaws.com/msg_test-public_en_noof_nohp.json</link>
+      <description>Flood warning overnight for low-lying areas near Wellington, NZ.</description>
+      <category>Geo</category>
+      <pubDate>Thu, 10 Mar 2016 22:12:03 </pubDate>
+      <guid>msg_test-public_en_noof_nohp-7</guid>
+      <dc:creator>Eliot.Christian@redcross.org</dc:creator>
+      <dc:date>2016-03-10T22:12:03.740000</dc:date>
+    </item>
+    <item>
+      <title>Flood warning for low-lying areas near Wellington, NZ.</title>
+      <link>https://alert-hub.s3.amazonaws.com/msg_test-public_en_noof_nohp.json</link>
+      <description>Flood warning overnight for low-lying areas near Wellington, NZ.</description>
+      <category>Geo</category>
+      <pubDate>Thu, 10 Mar 2016 22:12:03 </pubDate>
+      <guid>msg_test-public_en_noof_nohp-8</guid>
+      <dc:creator>Eliot.Christian@redcross.org</dc:creator>
+      <dc:date>2016-03-10T22:12:03.740000</dc:date>
+    </item>
+    <item>
+      <title>Flood warning for low-lying areas near Wellington, NZ.</title>
+      <link>https://alert-hub.s3.amazonaws.com/msg_test-public_en_noof_nohp.json</link>
+      <description>Flood warning overnight for low-lying areas near Wellington, NZ.</description>
+      <category>Geo</category>
+      <pubDate>Thu, 10 Mar 2016 22:12:03 </pubDate>
+      <guid>msg_test-public_en_noof_nohp-5</guid>
+      <dc:creator>Eliot.Christian@redcross.org</dc:creator>
+      <dc:date>2016-03-10T22:12:03.740000</dc:date>
+    </item>
+    <item>
+      <title>Flood warning for low-lying areas near Wellington, NZ.</title>
+      <link>https://alert-hub.s3.amazonaws.com/msg_test-public_en_noof_nohp.json</link>
+      <description>Flood warning overnight for low-lying areas near Wellington, NZ.</description>
+      <category>Geo</category>
+      <pubDate>Thu, 10 Mar 2016 22:12:03 </pubDate>
+      <guid>msg_test-public_en_noof_nohp-6</guid>
+      <dc:creator>Eliot.Christian@redcross.org</dc:creator>
+      <dc:date>2016-03-10T22:12:03.740000</dc:date>
+    </item>
+    <item>
+      <title>Flood warning for low-lying areas near Wellington, NZ.</title>
+      <link>https://alert-hub.s3.amazonaws.com/msg_test-public_en_noof_nohp.json</link>
+      <description>Flood warning overnight for low-lying areas near Wellington, NZ.</description>
+      <category>Geo</category>
+      <pubDate>Thu, 10 Mar 2016 22:12:03 </pubDate>
+      <guid>msg_test-public_en_noof_nohp-4</guid>
+      <dc:creator>Eliot.Christian@redcross.org</dc:creator>
+      <dc:date>2016-03-10T22:12:03.740000</dc:date>
+    </item>
+    <item>
+      <title>Flood warning for low-lying areas near Wellington, NZ.</title>
+      <link>https://alert-hub.s3.amazonaws.com/msg_test-public_en_noof_nohp.json</link>
+      <description>Flood warning overnight for low-lying areas near Wellington, NZ.</description>
+      <category>Geo</category>
+      <pubDate>Thu, 10 Mar 2016 22:12:03 </pubDate>
+      <guid>msg_test-public_en_noof_nohp-3</guid>
+      <dc:creator>Eliot.Christian@redcross.org</dc:creator>
+      <dc:date>2016-03-10T22:12:03.740000</dc:date>
+    </item>
+    <item>
+      <title>Flood warning for low-lying areas near Wellington, NZ.</title>
+      <link>https://alert-hub.s3.amazonaws.com/msg_test-public_en_noof_nohp.json</link>
+      <description>Flood warning overnight for low-lying areas near Wellington, NZ.</description>
+      <category>Geo</category>
+      <pubDate>Thu, 10 Mar 2016 22:12:03 </pubDate>
+      <guid>msg_test-public_en_noof_nohp-2</guid>
+      <dc:creator>Eliot.Christian@redcross.org</dc:creator>
+      <dc:date>2016-03-10T22:12:03.740000</dc:date>
+    </item>
+    <item>
+      <title>Flood warning for low-lying areas near Wellington, NZ.</title>
+      <link>https://alert-hub.s3.amazonaws.com/msg_public-actual_en_of_nohp.json</link>
+      <description>Flood warning overnight for low-lying areas near Wellington, NZ.</description>
+      <category>Met</category>
+      <pubDate>Thu, 10 Mar 2016 22:12:04 </pubDate>
+      <guid>public-actual_en_of_nohp-9</guid>
+      <dc:creator>Eliot.Christian@redcross.org</dc:creator>
+      <dc:date>2016-03-10T22:12:04.910000</dc:date>
+    </item>
+    <item>
+      <title>Flood warning for low-lying areas near Wellington, NZ.</title>
+      <link>https://alert-hub.s3.amazonaws.com/msg_public-actual_en_of_nohp.json</link>
+      <description>Flood warning overnight for low-lying areas near Wellington, NZ.</description>
+      <category>Met</category>
+      <pubDate>Thu, 10 Mar 2016 22:12:04 </pubDate>
+      <guid>public-actual_en_of_nohp-8</guid>
+      <dc:creator>Eliot.Christian@redcross.org</dc:creator>
+      <dc:date>2016-03-10T22:12:04.910000</dc:date>
+    </item>
+    <item>
+      <title>Flood warning for low-lying areas near Wellington, NZ.</title>
+      <link>https://alert-hub.s3.amazonaws.com/msg_public-actual_en_of_nohp.json</link>
+      <description>Flood warning overnight for low-lying areas near Wellington, NZ.</description>
+      <category>Met</category>
+      <pubDate>Thu, 10 Mar 2016 22:12:04 </pubDate>
+      <guid>public-actual_en_of_nohp-6</guid>
+      <dc:creator>Eliot.Christian@redcross.org</dc:creator>
+      <dc:date>2016-03-10T22:12:04.910000</dc:date>
+    </item>
+    <item>
+      <title>Flood warning for low-lying areas near Wellington, NZ.</title>
+      <link>https://alert-hub.s3.amazonaws.com/msg_public-actual_en_of_nohp.json</link>
+      <description>Flood warning overnight for low-lying areas near Wellington, NZ.</description>
+      <category>Met</category>
+      <pubDate>Thu, 10 Mar 2016 22:12:04 </pubDate>
+      <guid>public-actual_en_of_nohp-5</guid>
+      <dc:creator>Eliot.Christian@redcross.org</dc:creator>
+      <dc:date>2016-03-10T22:12:04.910000</dc:date>
+    </item>
+    <item>
+      <title>Flood warning for low-lying areas near Wellington, NZ.</title>
+      <link>https://alert-hub.s3.amazonaws.com/msg_public-actual_en_of_nohp.json</link>
+      <description>Flood warning overnight for low-lying areas near Wellington, NZ.</description>
+      <category>Met</category>
+      <pubDate>Thu, 10 Mar 2016 22:12:04 </pubDate>
+      <guid>public-actual_en_of_nohp-3</guid>
+      <dc:creator>Eliot.Christian@redcross.org</dc:creator>
+      <dc:date>2016-03-10T22:12:04.910000</dc:date>
+    </item>
+    <item>
+      <title>Flood warning for low-lying areas near Wellington, NZ.</title>
+      <link>https://alert-hub.s3.amazonaws.com/msg_public-actual_en_of_nohp.json</link>
+      <description>Flood warning overnight for low-lying areas near Wellington, NZ.</description>
+      <category>Met</category>
+      <pubDate>Thu, 10 Mar 2016 22:12:04 </pubDate>
+      <guid>public-actual_en_of_nohp-2</guid>
+      <dc:creator>Eliot.Christian@redcross.org</dc:creator>
+      <dc:date>2016-03-10T22:12:04.910000</dc:date>
+    </item>
+    <item>
+      <title>Flood warning for low-lying areas near Wellington, NZ.</title>
+      <link>https://alert-hub.s3.amazonaws.com/msg_public-actual_en_of_nohp.json</link>
+      <description>Flood warning overnight for low-lying areas near Wellington, NZ.</description>
+      <category>Met</category>
+      <pubDate>Thu, 10 Mar 2016 22:12:04 </pubDate>
+      <guid>public-actual_en_of_nohp-1</guid>
+      <dc:creator>Eliot.Christian@redcross.org</dc:creator>
+      <dc:date>2016-03-10T22:12:04.910000</dc:date>
+    </item>
+    <item>
+      <title>Flood warning for low-lying areas near Wellington, NZ.</title>
+      <link>https://alert-hub.s3.amazonaws.com/msg_private-actual_en_of_hp.json</link>
+      <description>Flood warning overnight for low-lying areas near Wellington, NZ.</description>
+      <category>Met</category>
+      <pubDate>Thu, 10 Mar 2016 22:12:03 </pubDate>
+      <guid>private-actual_en_of_hp-9</guid>
+      <dc:creator>Eliot.Christian@redcross.org</dc:creator>
+      <dc:date>2016-03-10T22:12:03.802000</dc:date>
+    </item>
+    <item>
+      <title>Flood warning for low-lying areas near Wellington, NZ.</title>
+      <link>https://alert-hub.s3.amazonaws.com/msg_private-actual_en_of_hp.json</link>
+      <description>Flood warning overnight for low-lying areas near Wellington, NZ.</description>
+      <category>Met</category>
+      <pubDate>Thu, 10 Mar 2016 22:12:03 </pubDate>
+      <guid>private-actual_en_of_hp-5</guid>
+      <dc:creator>Eliot.Christian@redcross.org</dc:creator>
+      <dc:date>2016-03-10T22:12:03.802000</dc:date>
+    </item>
+    <item>
+      <title>Flood warning for low-lying areas near Wellington, NZ.</title>
+      <link>https://alert-hub.s3.amazonaws.com/msg_private-actual_en_of_hp.json</link>
+      <description>Flood warning overnight for low-lying areas near Wellington, NZ.</description>
+      <category>Met</category>
+      <pubDate>Thu, 10 Mar 2016 22:12:03 </pubDate>
+      <guid>private-actual_en_of_hp-8</guid>
+      <dc:creator>Eliot.Christian@redcross.org</dc:creator>
+      <dc:date>2016-03-10T22:12:03.802000</dc:date>
+    </item>
+    <item>
+      <title>Flood warning for low-lying areas near Wellington, NZ.</title>
+      <link>https://alert-hub.s3.amazonaws.com/msg_private-actual_en_of_hp.json</link>
+      <description>Flood warning overnight for low-lying areas near Wellington, NZ.</description>
+      <category>Met</category>
+      <pubDate>Thu, 10 Mar 2016 22:12:03 </pubDate>
+      <guid>private-actual_en_of_hp-7</guid>
+      <dc:creator>Eliot.Christian@redcross.org</dc:creator>
+      <dc:date>2016-03-10T22:12:03.802000</dc:date>
+    </item>
+    <item>
+      <title>Flood warning for low-lying areas near Wellington, NZ.</title>
+      <link>https://alert-hub.s3.amazonaws.com/msg_private-actual_en_of_hp.json</link>
+      <description>Flood warning overnight for low-lying areas near Wellington, NZ.</description>
+      <category>Met</category>
+      <pubDate>Thu, 10 Mar 2016 22:12:03 </pubDate>
+      <guid>private-actual_en_of_hp-6</guid>
+      <dc:creator>Eliot.Christian@redcross.org</dc:creator>
+      <dc:date>2016-03-10T22:12:03.802000</dc:date>
+    </item>
+    <item>
+      <title>Flood warning for low-lying areas near Wellington, NZ.</title>
+      <link>https://alert-hub.s3.amazonaws.com/msg_private-actual_en_of_hp.json</link>
+      <description>Flood warning overnight for low-lying areas near Wellington, NZ.</description>
+      <category>Met</category>
+      <pubDate>Thu, 10 Mar 2016 22:12:03 </pubDate>
+      <guid>private-actual_en_of_hp-4</guid>
+      <dc:creator>Eliot.Christian@redcross.org</dc:creator>
+      <dc:date>2016-03-10T22:12:03.802000</dc:date>
+    </item>
+    <item>
+      <title>Flood warning for low-lying areas near Wellington, NZ.</title>
+      <link>https://alert-hub.s3.amazonaws.com/msg_private-actual_en_of_hp.json</link>
+      <description>Flood warning overnight for low-lying areas near Wellington, NZ.</description>
+      <category>Met</category>
+      <pubDate>Thu, 10 Mar 2016 22:12:03 </pubDate>
+      <guid>private-actual_en_of_hp-2</guid>
+      <dc:creator>Eliot.Christian@redcross.org</dc:creator>
+      <dc:date>2016-03-10T22:12:03.802000</dc:date>
+    </item>
+    <item>
+      <title>Flood warning for low-lying areas near Wellington, NZ.</title>
+      <link>https://alert-hub.s3.amazonaws.com/msg_private-actual_en_of_hp.json</link>
+      <description>Flood warning overnight for low-lying areas near Wellington, NZ.</description>
+      <category>Met</category>
+      <pubDate>Thu, 10 Mar 2016 22:12:03 </pubDate>
+      <guid>private-actual_en_of_hp-3</guid>
+      <dc:creator>Eliot.Christian@redcross.org</dc:creator>
+      <dc:date>2016-03-10T22:12:03.802000</dc:date>
+    </item>
+    <item>
+      <title>Flood warning for low-lying areas near Wellington, NZ.</title>
+      <link>https://alert-hub.s3.amazonaws.com/msg_private-actual_en_of_hp.json</link>
+      <description>Flood warning overnight for low-lying areas near Wellington, NZ.</description>
+      <category>Met</category>
+      <pubDate>Thu, 10 Mar 2016 22:12:03 </pubDate>
+      <guid>private-actual_en_of_hp-1</guid>
+      <dc:creator>Eliot.Christian@redcross.org</dc:creator>
+      <dc:date>2016-03-10T22:12:03.802000</dc:date>
+    </item>
+    <item>
+      <title>Flood warning for low-lying areas near Wellington, NZ.</title>
+      <link>https://alert-hub.s3.amazonaws.com/msg_actual-public_fr_of_nohp.json</link>
+      <description>Flood warning overnight for low-lying areas near Wellington, NZ.</description>
+      <category>Met</category>
+      <pubDate>Thu, 10 Mar 2016 22:12:03 </pubDate>
+      <guid>msg_actual-public_fr_of_nohp-9</guid>
+      <dc:creator>Eliot.Christian@redcross.org</dc:creator>
+      <dc:date>2016-03-10T22:12:03.770000</dc:date>
+    </item>
+    <item>
+      <title>Flood warning for low-lying areas near Wellington, NZ.</title>
+      <link>https://alert-hub.s3.amazonaws.com/msg_actual-public_fr_of_nohp.json</link>
+      <description>Flood warning overnight for low-lying areas near Wellington, NZ.</description>
+      <category>Met</category>
+      <pubDate>Thu, 10 Mar 2016 22:12:03 </pubDate>
+      <guid>msg_actual-public_fr_of_nohp-8</guid>
+      <dc:creator>Eliot.Christian@redcross.org</dc:creator>
+      <dc:date>2016-03-10T22:12:03.770000</dc:date>
+    </item>
+    <item>
+      <title>Flood warning for low-lying areas near Wellington, NZ.</title>
+      <link>https://alert-hub.s3.amazonaws.com/msg_actual-public_fr_of_nohp.json</link>
+      <description>Flood warning overnight for low-lying areas near Wellington, NZ.</description>
+      <category>Met</category>
+      <pubDate>Thu, 10 Mar 2016 22:12:03 </pubDate>
+      <guid>msg_actual-public_fr_of_nohp-4</guid>
+      <dc:creator>Eliot.Christian@redcross.org</dc:creator>
+      <dc:date>2016-03-10T22:12:03.770000</dc:date>
+    </item>
+    <item>
+      <title>Flood warning for low-lying areas near Wellington, NZ.</title>
+      <link>https://alert-hub.s3.amazonaws.com/msg_actual-public_fr_of_nohp.json</link>
+      <description>Flood warning overnight for low-lying areas near Wellington, NZ.</description>
+      <category>Met</category>
+      <pubDate>Thu, 10 Mar 2016 22:12:03 </pubDate>
+      <guid>msg_actual-public_fr_of_nohp-2</guid>
+      <dc:creator>Eliot.Christian@redcross.org</dc:creator>
+      <dc:date>2016-03-10T22:12:03.770000</dc:date>
+    </item>
+    <item>
+      <title>Flood warning for low-lying areas near Wellington, NZ.</title>
+      <link>https://alert-hub.s3.amazonaws.com/msg_actual-public_fr_of_nohp.json</link>
+      <description>Flood warning overnight for low-lying areas near Wellington, NZ.</description>
+      <category>Met</category>
+      <pubDate>Thu, 10 Mar 2016 22:12:03 </pubDate>
+      <guid>msg_actual-public_fr_of_nohp-1</guid>
+      <dc:creator>Eliot.Christian@redcross.org</dc:creator>
+      <dc:date>2016-03-10T22:12:03.770000</dc:date>
+    </item>
+    <item>
+      <title>Flood warning for low-lying areas near Wellington, NZ.</title>
+      <link>https://alert-hub.s3.amazonaws.com/msg_actual-public_en_of_hp.json</link>
+      <description>Flood warning overnight for low-lying areas near Wellington, NZ.</description>
+      <category>Met</category>
+      <pubDate>Thu, 10 Mar 2016 22:12:03 </pubDate>
+      <guid>msg_actual-public_en_of_hp-9</guid>
+      <dc:creator>Eliot.Christian@redcross.org</dc:creator>
+      <dc:date>2016-03-10T22:12:03.770000</dc:date>
+    </item>
+    <item>
+      <title>Flood warning for low-lying areas near Wellington, NZ.</title>
+      <link>https://alert-hub.s3.amazonaws.com/msg_actual-public_en_noof_hp.json</link>
+      <description>Flood warning overnight for low-lying areas near Wellington, NZ.</description>
+      <category>Met</category>
+      <pubDate>Thu, 10 Mar 2016 22:12:03 </pubDate>
+      <guid>msg_actual-public_en_noof_hp-9</guid>
+      <dc:creator>Eliot.Christian@redcross.org</dc:creator>
+      <dc:date>2016-03-10T22:12:03.770000</dc:date>
+    </item>
+    <item>
+      <title>Flood warning for low-lying areas near Wellington, NZ.</title>
+      <link>https://alert-hub.s3.amazonaws.com/msg_actual-public_en_noof_hp.json</link>
+      <description>Flood warning overnight for low-lying areas near Wellington, NZ.</description>
+      <category>Met</category>
+      <pubDate>Thu, 10 Mar 2016 22:12:03 </pubDate>
+      <guid>msg_actual-public_en_noof_hp-4</guid>
+      <dc:creator>Eliot.Christian@redcross.org</dc:creator>
+      <dc:date>2016-03-10T22:12:03.770000</dc:date>
+    </item>
+    <item>
+      <title>Flood warning for low-lying areas near Wellington, NZ.</title>
+      <link>https://alert-hub.s3.amazonaws.com/msg_actual-public_en_of_hp.json</link>
+      <description>Flood warning overnight for low-lying areas near Wellington, NZ.</description>
+      <category>Met</category>
+      <pubDate>Thu, 10 Mar 2016 22:12:03 </pubDate>
+      <guid>msg_actual-public_en_of_hp-4</guid>
+      <dc:creator>Eliot.Christian@redcross.org</dc:creator>
+      <dc:date>2016-03-10T22:12:03.770000</dc:date>
+    </item>
+    <item>
+      <title>Flood warning for low-lying areas near Wellington, NZ.</title>
+      <link>https://alert-hub.s3.amazonaws.com/msg_actual-public_en_noof_hp.json</link>
+      <description>Flood warning overnight for low-lying areas near Wellington, NZ.</description>
+      <category>Met</category>
+      <pubDate>Thu, 10 Mar 2016 22:12:03 </pubDate>
+      <guid>msg_actual-public_en_noof_hp-3</guid>
+      <dc:creator>Eliot.Christian@redcross.org</dc:creator>
+      <dc:date>2016-03-10T22:12:03.770000</dc:date>
+    </item>
+    <item>
+      <title>Flood warning for low-lying areas near Wellington, NZ.</title>
+      <link>https://alert-hub.s3.amazonaws.com/msg_actual-public_en_noof_hp.json</link>
+      <description>Flood warning overnight for low-lying areas near Wellington, NZ.</description>
+      <category>Met</category>
+      <pubDate>Thu, 10 Mar 2016 22:12:03 </pubDate>
+      <guid>msg_actual-public_en_noof_hp-2</guid>
+      <dc:creator>Eliot.Christian@redcross.org</dc:creator>
+      <dc:date>2016-03-10T22:12:03.770000</dc:date>
+    </item>
+    <item>
+      <title>Flood warning for low-lying areas near Wellington, NZ.</title>
+      <link>https://alert-hub.s3.amazonaws.com/msg_actual-public_en_noof_hp.json</link>
+      <description>Flood warning overnight for low-lying areas near Wellington, NZ.</description>
+      <category>Met</category>
+      <pubDate>Thu, 10 Mar 2016 22:12:03 </pubDate>
+      <guid>msg_actual-public_en_noof_hp-1</guid>
+      <dc:creator>Eliot.Christian@redcross.org</dc:creator>
+      <dc:date>2016-03-10T22:12:03.770000</dc:date>
+    </item>
+    <item>
+      <title>Flood warning for low-lying areas near Wellington, NZ.</title>
+      <link>https://alert-hub.s3.amazonaws.com/msg_actual-public_en_of_hp.json</link>
+      <description>Flood warning overnight for low-lying areas near Wellington, NZ.</description>
+      <category>Met</category>
+      <pubDate>Thu, 10 Mar 2016 22:12:03 </pubDate>
+      <guid>msg_actual-public_en_of_hp-2</guid>
+      <dc:creator>Eliot.Christian@redcross.org</dc:creator>
+      <dc:date>2016-03-10T22:12:03.770000</dc:date>
+    </item>
+    <item>
+      <title>Flood warning for low-lying areas near Wellington, NZ.</title>
+      <link>https://alert-hub.s3.amazonaws.com/msg_actual-public_en_of_hp.json</link>
+      <description>Flood warning overnight for low-lying areas near Wellington, NZ.</description>
+      <category>Met</category>
+      <pubDate>Thu, 10 Mar 2016 22:12:03 </pubDate>
+      <guid>msg_actual-public_en_of_hp-1</guid>
+      <dc:creator>Eliot.Christian@redcross.org</dc:creator>
+      <dc:date>2016-03-10T22:12:03.770000</dc:date>
+    </item>
+    <item>
+      <title>Flood warning for low-lying areas near Wellington, NZ.</title>
+      <link>https://alert-hub.s3.amazonaws.com/msg_actual-public_en_of_hp.json</link>
+      <description>Flood warning overnight for low-lying areas near Wellington, NZ.</description>
+      <category>Met</category>
+      <pubDate>Thu, 10 Mar 2016 22:12:03 </pubDate>
+      <guid>msg_actual-public_en_of_hp-8</guid>
+      <dc:creator>Eliot.Christian@redcross.org</dc:creator>
+      <dc:date>2016-03-10T22:12:03.770000</dc:date>
+    </item>
+    <item>
+      <title>Flood warning for low-lying areas near Wellington, NZ.</title>
+      <link>https://alert-hub.s3.amazonaws.com/msg_actual-public_en_of_hp.json</link>
+      <description>Flood warning overnight for low-lying areas near Wellington, NZ.</description>
+      <category>Met</category>
+      <pubDate>Thu, 10 Mar 2016 22:12:03 </pubDate>
+      <guid>msg_actual-public_en_of_hp-7</guid>
+      <dc:creator>Eliot.Christian@redcross.org</dc:creator>
+      <dc:date>2016-03-10T22:12:03.770000</dc:date>
+    </item>
+    <item>
+      <title>Flood warning for low-lying areas near Wellington, NZ.</title>
+      <link>https://alert-hub.s3.amazonaws.com/msg_actual-public_en_of_hp.json</link>
+      <description>Flood warning overnight for low-lying areas near Wellington, NZ.</description>
+      <category>Met</category>
+      <pubDate>Thu, 10 Mar 2016 22:12:03 </pubDate>
+      <guid>msg_actual-public_en_of_hp-6</guid>
+      <dc:creator>Eliot.Christian@redcross.org</dc:creator>
+      <dc:date>2016-03-10T22:12:03.770000</dc:date>
+    </item>
+    <item>
+      <title>Flood warning for low-lying areas near Wellington, NZ.</title>
+      <link>https://alert-hub.s3.amazonaws.com/msg_actual-public_en_of_hp.json</link>
+      <description>Flood warning overnight for low-lying areas near Wellington, NZ.</description>
+      <category>Met</category>
+      <pubDate>Thu, 10 Mar 2016 22:12:03 </pubDate>
+      <guid>msg_actual-public_en_of_hp-5</guid>
+      <dc:creator>Eliot.Christian@redcross.org</dc:creator>
+      <dc:date>2016-03-10T22:12:03.770000</dc:date>
+    </item>
+    <item>
+      <title>Flood warning for low-lying areas near Wellington, NZ.</title>
+      <link>https://alert-hub.s3.amazonaws.com/msg_actual-public_en_of_hp.json</link>
+      <description>Flood warning overnight for low-lying areas near Wellington, NZ.</description>
+      <category>Met</category>
+      <pubDate>Thu, 10 Mar 2016 22:12:03 </pubDate>
+      <guid>msg_actual-public_en_of_hp-3</guid>
+      <dc:creator>Eliot.Christian@redcross.org</dc:creator>
+      <dc:date>2016-03-10T22:12:03.770000</dc:date>
+    </item>
+    <item>
+      <title>Flood warning for low-lying areas near Wellington, NZ.</title>
+      <link>https://alert-hub.s3.amazonaws.com/msg_actual-public_en_noof_hp.json</link>
+      <description>Flood warning overnight for low-lying areas near Wellington, NZ.</description>
+      <category>Met</category>
+      <pubDate>Thu, 10 Mar 2016 22:12:03 </pubDate>
+      <guid>msg_actual-public_en_noof_hp-6</guid>
+      <dc:creator>Eliot.Christian@redcross.org</dc:creator>
+      <dc:date>2016-03-10T22:12:03.770000</dc:date>
+    </item>
+    <item>
+      <title>Flood warning for low-lying areas near Wellington, NZ.</title>
+      <link>https://alert-hub.s3.amazonaws.com/msg_actual-public_en_noof_hp.json</link>
+      <description>Flood warning overnight for low-lying areas near Wellington, NZ.</description>
+      <category>Met</category>
+      <pubDate>Thu, 10 Mar 2016 22:12:03 </pubDate>
+      <guid>msg_actual-public_en_noof_hp-5</guid>
+      <dc:creator>Eliot.Christian@redcross.org</dc:creator>
+      <dc:date>2016-03-10T22:12:03.770000</dc:date>
+    </item>
+  </channel>
+</rss>

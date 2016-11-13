@@ -1,0 +1,1 @@
+aws sns publish --topic-arn "arn:aws:sns:eu-west-1:603029492791:CAPAlertEvent" --message "file://./sns_test_1"

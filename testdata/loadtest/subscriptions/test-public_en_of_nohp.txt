@@ -1,0 +1,18 @@
+{
+  "subscription": {
+    "subscriptionId": "test-public_en_of_nohp",
+    "subscriptionName": "test-public_en_of_nohp testfeed",
+    "subscriptionUrl": "https://test-rss-output.s3.amazonaws.com/test-public_en_of_nohp/rss.xml",
+    "languageOnly": "en",
+    "highPriorityOnly": false,
+    "officialOnly": true,
+    "xPathFilterId": "test-public",
+    "xPathFilter": "//cap:status='Test' and //cap:scope='Public'",
+    "areaFilterId": "country-gb-city-Sheffield",
+    "areaFilter": {
+        "polygonCoordinates": [ [-1.55,53.4], [-1.55,53.33], [-1.38,53.33], [-1.38,53.44], [-1.55,53.44], [-1.55,53.4] ],
+        "circleCenterRadius": "none"
+    },
+    "feed-rss-xml": "<?xml version='1.0' encoding='UTF-8'?><rss version='2.0' xmlns:atom='http://www.w3.org/2005/Atom'><channel><link rel='alternate' title='RSS' href='https://s3-eu-west-1.amazonaws.com/alert-feeds/country-gb-city-Sheffield-lang-en/rss.xml' type='application/rss+xml' /><title>Test Public alerts for Sheffield in country-gb, in English</title><link>https://alert-feeds.s3.amazonaws.com/country-gb-city-Sheffield-lang-en/rss.xml</link><description>This feed lists the most recent Test Public alerts for Sheffield in country-gb, in English.</description><language>en</language><copyright>public domain</copyright><pubDate>Thu, 19 Dec 2013 10:31:34 GMT</pubDate><lastBuildDate>Thu, 19 Dec 2013 10:31:34 GMT</lastBuildDate><docs>http://blogs.law.harvard.edu/tech/rss</docs><image><title>Test Public alerts for Sheffield in country-gb, in English</title><url>https://s3-eu-west-1.amazonaws.com/alert-feeds/country-gb-city-Sheffield-lang-en/logo.jpg</url><link>https://s3-eu-west-1.amazonaws.com/alert-feeds/country-gb-city-Sheffield-lang-en/rss.xml</link></image></channel></rss>"
+   }
+  }

@@ -1,0 +1,14 @@
+{
+    "alert": {
+        "inputBucketName": "alert-hub-input", 
+        "inputRecordKey": "mosul-dam-ku/myTestFile.xml", 
+        "sourceLanguage": "fr", 
+        "sourceName": "Iraq Ministry of Water Resources, Mosul Dam alerts in Kurdish", 
+        "hubBucketName": "alert-hub", 
+        "capXml": "<?xml version=\"1.0\" encoding=\"UTF-8\"?><cap:alert xmlns:cap=\"urn:oasis:names:tc:emergency:cap:1.1\">  <cap:identifier>msg_test-public_fr_of_hp</cap:identifier>  <cap:sender>Eliot.Christian@redcross.org</cap:sender>  <cap:sent>2016-03-10T22:12:03.770</cap:sent>  <cap:status>Test</cap:status>  <cap:msgType>Update</cap:msgType>  <cap:scope>Public</cap:scope>  <cap:addresses>emergency.manager@isp.net</cap:addresses>  <cap:note>Disregard the referenced alert.</cap:note>  <cap:references>Eliot.Christian@redcross.org,urn:oid:2.49.0.3.1.127.2016.3.10.10.10.12.3.764,2016-03-10T22:12:03.764</cap:references>  <cap:info>    <cap:language>fr</cap:language>    <cap:category>Met</cap:category>    <cap:event>flood</cap:event>    <cap:responseType>Shelter</cap:responseType>    <cap:urgency>Immediate</cap:urgency>    <cap:severity>Severe</cap:severity>    <cap:certainty>Observed</cap:certainty>    <cap:expires>2016-03-11T08:00:00-00:00</cap:expires>    <cap:senderName>New Zealand Red Cross</cap:senderName>    <cap:headline>Flood warning for low-lying areas near Wellington, NZ.</cap:headline>    <cap:description>Flood warning overnight for low-lying areas near Wellington, NZ.</cap:description>    <cap:instruction>Residents in low-lying areas should exercise caution. Avoid low areas. Persons should not be out on the roads during heavy rainfall. If you must be outside, use extreme caution. Do not drive your vehicle into areas where water covers the roadway. Vehicles caught in rising waters should be abandoned quickly. Continue listening to local media as updates will be provided if conditions change significantly.</cap:instruction>    <cap:area>      <cap:areaDesc>North Island and South Island within 50 miles of Welllington.</cap:areaDesc>      <cap:polygon>-38.8,173 -41.2,170.7 -44,175.3 -41.2,178 -38.8,173</cap:polygon>      <cap:circle/>    </cap:area>  </cap:info></cap:alert>", 
+        "folderName": "mosul-dam-ku", 
+        "sourceIsOfficial": true, 
+        "hubRecordKey": "mosul-dam-ku/2016-04-26-01-03-22-784", 
+        "capNamespaceUri": "urn:oasis:names:tc:emergency:cap:1.1"
+    }
+}

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+  <channel>
+    <title>#TITLE#</title>
+    <link>https://s3-eu-west-1.amazonaws.com/test-rss-output/#ID#/rss.xml</link>
+    <description>#DESCRIPTION#</description>
+    <language>#LANGUAGE#</language>
+    <copyright>public domain</copyright>
+    <pubDate>#PUBDATE#</pubDate>
+    <dc:creator>Alert Hub (eliot.christian@redCross.org)</dc:creator>
+    <dc:date>#DCDATE#</dc:date>
+    <dc:language>#LANGUAGE#</dc:language>
+    <dc:rights>public domain</dc:rights>
+    <image>
+      <title>#TITLE#</title>
+      <url>https://s3-eu-west-1.amazonaws.com/test-rss-output/capLogo.jpg</url>
+      <link>https://s3-eu-west-1.amazonaws.com/test-rss-output/#ID#/rss.xml</link>
+    </image>
+
+  </channel>
+</rss>

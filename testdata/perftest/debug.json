@@ -1,0 +1,416 @@
+{
+	"took": 12,
+	"timed_out": false,
+	"_shards": {
+		"total": 10,
+		"successful": 5,
+		"failed": 5,
+		"failures": [{
+			"shard": 0,
+			"index": "alerts",
+			"node": "auNw8bf-TuS03O6R2rx71Q",
+			"reason": {
+				"type": "search_parse_exception",
+				"reason": "No mapping found for [recid] in order to sort on"
+			}
+		}]
+	},
+	"hits": {
+		"total": 2,
+		"max_score": null,
+		"hits": [{
+			"_index": "alertssubscriptions",
+			"_type": "alertsubscription",
+			"_id": "country-je-city-swic1372-lang-en",
+			"_score": null,
+			"_source": {
+				"recid": "country-je-city-swic1372-lang-en",
+				"name": "Official Public alerts for Jersey in country-je, in English",
+				"shortcode": "country-je-city-swic1372-lang-en",
+				"subshape": {
+					"type": "polygon",
+					"coordinates": [[["-2.254801",
+					"49.160122"],
+					["-2.010465",
+					"49.160122"],
+					["-2.010465",
+					"49.262131"],
+					["-2.254801",
+					"49.262131"],
+					["-2.254801",
+					"49.160122"]]]
+				},
+				"subscriptionUrl": "https://alert-feeds.s3.amazonaws.com/country-je-city-swic1372-lang-en/rss.xml",
+				"languageOnly": "en",
+				"highPriorityOnly": false,
+				"officialOnly": true,
+				"xPathFilterId": "actual-public",
+				"xPathFilter": "//cap:status='Actual' and //cap:scope='Public'",
+				"areaFilterId": "country-je-city-swic1372"
+			},
+			"sort": ["city"]
+		},
+		{
+			"_index": "alertssubscriptions",
+			"_type": "alertsubscription",
+			"_id": "country-je-lang-en",
+			"_score": null,
+			"_source": {
+				"recid": "country-je-lang-en",
+				"name": "Official Public alerts in English for Jersey",
+				"shortcode": "country-je-lang-en",
+				"subshape": {
+					"type": "polygon",
+					"coordinates": [[["-2.253889",
+					"49.112778"],
+					["-1.927778",
+					"49.112778"],
+					["-1.927778",
+					"49.305833"],
+					["-2.253889",
+					"49.305833"],
+					["-2.253889",
+					"49.112778"]]]
+				},
+				"subscriptionUrl": "https://alert-feeds.s3.amazonaws.com/country-je-lang-en/rss.xml",
+				"languageOnly": "en",
+				"highPriorityOnly": false,
+				"officialOnly": true,
+				"xPathFilterId": "actual-public",
+				"xPathFilter": "//cap:status='Actual' and //cap:scope='Public'",
+				"areaFilterId": "country-je"
+			},
+			"sort": ["country"]
+		}]
+	}
+}{
+	"took": 14,
+	"timed_out": false,
+	"_shards": {
+		"total": 10,
+		"successful": 5,
+		"failed": 5,
+		"failures": [{
+			"shard": 0,
+			"index": "alerts",
+			"node": "auNw8bf-TuS03O6R2rx71Q",
+			"reason": {
+				"type": "search_parse_exception",
+				"reason": "No mapping found for [recid] in order to sort on"
+			}
+		}]
+	},
+	"hits": {
+		"total": 3,
+		"max_score": null,
+		"hits": [{
+			"_index": "alertssubscriptions",
+			"_type": "alertsubscription",
+			"_id": "country-zw-city-swic966-lang-en",
+			"_score": null,
+			"_source": {
+				"recid": "country-zw-city-swic966-lang-en",
+				"name": "Official Public alerts for Kariba in country-zw, in English",
+				"shortcode": "country-zw-city-swic966-lang-en",
+				"subshape": {
+					"type": "polygon",
+					"coordinates": [[["28.7355479",
+					"-16.5672739"],
+					["28.8155479",
+					"-16.5672739"],
+					["28.8155479",
+					"-16.4872739"],
+					["28.7355479",
+					"-16.4872739"],
+					["28.7355479",
+					"-16.5672739"]]]
+				},
+				"subscriptionUrl": "https://alert-feeds.s3.amazonaws.com/country-zw-city-swic966-lang-en/rss.xml",
+				"languageOnly": "en",
+				"highPriorityOnly": false,
+				"officialOnly": true,
+				"xPathFilterId": "actual-public",
+				"xPathFilter": "//cap:status='Actual' and //cap:scope='Public'",
+				"areaFilterId": "country-zw-city-swic966"
+			},
+			"sort": ["city"]
+		},
+		{
+			"_index": "alertssubscriptions",
+			"_type": "alertsubscription",
+			"_id": "country-zm-lang-en",
+			"_score": null,
+			"_source": {
+				"recid": "country-zm-lang-en",
+				"name": "Official Public alerts in English for Zambia",
+				"shortcode": "country-zm-lang-en",
+				"subshape": {
+					"type": "polygon",
+					"coordinates": [[[22,
+					"-18.05"],
+					["39.283333",
+					"-18.05"],
+					["39.283333",
+					5],
+					[22,
+					5],
+					[22,
+					"-18.05"]]]
+				},
+				"subscriptionUrl": "https://alert-feeds.s3.amazonaws.com/country-zm-lang-en/rss.xml",
+				"languageOnly": "en",
+				"highPriorityOnly": false,
+				"officialOnly": true,
+				"xPathFilterId": "actual-public",
+				"xPathFilter": "//cap:status='Actual' and //cap:scope='Public'",
+				"areaFilterId": "country-zm"
+			},
+			"sort": ["country"]
+		},
+		{
+			"_index": "alertssubscriptions",
+			"_type": "alertsubscription",
+			"_id": "country-zw-lang-en",
+			"_score": null,
+			"_source": {
+				"recid": "country-zw-lang-en",
+				"name": "Official Public alerts in English for Zimbabwe",
+				"shortcode": "country-zw-lang-en",
+				"subshape": {
+					"type": "polygon",
+					"coordinates": [[["25.333333",
+					"-22.316667"],
+					["33.05",
+					"-22.316667"],
+					["33.05",
+					"-15.6"],
+					["25.333333",
+					"-15.6"],
+					["25.333333",
+					"-22.316667"]]]
+				},
+				"subscriptionUrl": "https://alert-feeds.s3.amazonaws.com/country-zw-lang-en/rss.xml",
+				"languageOnly": "en",
+				"highPriorityOnly": false,
+				"officialOnly": true,
+				"xPathFilterId": "actual-public",
+				"xPathFilter": "//cap:status='Actual' and //cap:scope='Public'",
+				"areaFilterId": "country-zw"
+			},
+			"sort": ["country"]
+		}]
+	}
+}{
+	"took": 19,
+	"timed_out": false,
+	"_shards": {
+		"total": 10,
+		"successful": 5,
+		"failed": 5,
+		"failures": [{
+			"shard": 0,
+			"index": "alerts",
+			"node": "auNw8bf-TuS03O6R2rx71Q",
+			"reason": {
+				"type": "search_parse_exception",
+				"reason": "No mapping found for [recid] in order to sort on"
+			}
+		}]
+	},
+	"hits": {
+		"total": 6,
+		"max_score": null,
+		"hits": [{
+			"_index": "alertssubscriptions",
+			"_type": "alertsubscription",
+			"_id": "country-er-city-swic154-lang-en",
+			"_score": null,
+			"_source": {
+				"recid": "country-er-city-swic154-lang-en",
+				"name": "Official Public alerts for Assab in country-er, in English",
+				"shortcode": "country-er-city-swic154-lang-en",
+				"subshape": {
+					"type": "polygon",
+					"coordinates": [[["42.5730425",
+					"12.8378"],
+					["42.8930425",
+					"12.8378"],
+					["42.8930425",
+					"13.1578"],
+					["42.5730425",
+					"13.1578"],
+					["42.5730425",
+					"12.8378"]]]
+				},
+				"subscriptionUrl": "https://alert-feeds.s3.amazonaws.com/country-er-city-swic154-lang-en/rss.xml",
+				"languageOnly": "en",
+				"highPriorityOnly": false,
+				"officialOnly": true,
+				"xPathFilterId": "actual-public",
+				"xPathFilter": "//cap:status='Actual' and //cap:scope='Public'",
+				"areaFilterId": "country-er-city-swic154"
+			},
+			"sort": ["city"]
+		},
+		{
+			"_index": "alertssubscriptions",
+			"_type": "alertsubscription",
+			"_id": "country-ye-lang-en",
+			"_score": null,
+			"_source": {
+				"recid": "country-ye-lang-en",
+				"name": "Official Public alerts in English for Republic of Yemen",
+				"shortcode": "country-ye-lang-en",
+				"subshape": {
+					"type": "polygon",
+					"coordinates": [[["41.833333",
+					"12.1"],
+					["54.533333",
+					"12.1"],
+					["54.533333",
+					"27.695278"],
+					["41.833333",
+					"27.695278"],
+					["41.833333",
+					"12.1"]]]
+				},
+				"subscriptionUrl": "https://alert-feeds.s3.amazonaws.com/country-ye-lang-en/rss.xml",
+				"languageOnly": "en",
+				"highPriorityOnly": false,
+				"officialOnly": true,
+				"xPathFilterId": "actual-public",
+				"xPathFilter": "//cap:status='Actual' and //cap:scope='Public'",
+				"areaFilterId": "country-ye"
+			},
+			"sort": ["country"]
+		},
+		{
+			"_index": "alertssubscriptions",
+			"_type": "alertsubscription",
+			"_id": "country-et-lang-en",
+			"_score": null,
+			"_source": {
+				"recid": "country-et-lang-en",
+				"name": "Official Public alerts in English for Ethiopia",
+				"shortcode": "country-et-lang-en",
+				"subshape": {
+					"type": "polygon",
+					"coordinates": [[["33.033333",
+					"3.433333"],
+					["47.45",
+					"3.433333"],
+					["47.45",
+					"14.698889"],
+					["33.033333",
+					"14.698889"],
+					["33.033333",
+					"3.433333"]]]
+				},
+				"subscriptionUrl": "https://alert-feeds.s3.amazonaws.com/country-et-lang-en/rss.xml",
+				"languageOnly": "en",
+				"highPriorityOnly": false,
+				"officialOnly": true,
+				"xPathFilterId": "actual-public",
+				"xPathFilter": "//cap:status='Actual' and //cap:scope='Public'",
+				"areaFilterId": "country-et"
+			},
+			"sort": ["country"]
+		},
+		{
+			"_index": "alertssubscriptions",
+			"_type": "alertsubscription",
+			"_id": "country-er-lang-en",
+			"_score": null,
+			"_source": {
+				"recid": "country-er-lang-en",
+				"name": "Official Public alerts in English for Eritrea",
+				"shortcode": "country-er-lang-en",
+				"subshape": {
+					"type": "polygon",
+					"coordinates": [[["36.483333",
+					"12.383333"],
+					["43.114722",
+					"12.383333"],
+					["43.114722",
+					"18.033333"],
+					["36.483333",
+					"18.033333"],
+					["36.483333",
+					"12.383333"]]]
+				},
+				"subscriptionUrl": "https://alert-feeds.s3.amazonaws.com/country-er-lang-en/rss.xml",
+				"languageOnly": "en",
+				"highPriorityOnly": false,
+				"officialOnly": true,
+				"xPathFilterId": "actual-public",
+				"xPathFilter": "//cap:status='Actual' and //cap:scope='Public'",
+				"areaFilterId": "country-er"
+			},
+			"sort": ["country"]
+		},
+		{
+			"_index": "alertssubscriptions",
+			"_type": "alertsubscription",
+			"_id": "country-sa-lang-en",
+			"_score": null,
+			"_source": {
+				"recid": "country-sa-lang-en",
+				"name": "Official Public alerts in English for Saudi Arabia",
+				"shortcode": "country-sa-lang-en",
+				"subshape": {
+					"type": "polygon",
+					"coordinates": [[["34.566667",
+					5],
+					["55.166667",
+					5],
+					["55.166667",
+					"32.2"],
+					["34.566667",
+					"32.2"],
+					["34.566667",
+					5]]]
+				},
+				"subscriptionUrl": "https://alert-feeds.s3.amazonaws.com/country-sa-lang-en/rss.xml",
+				"languageOnly": "en",
+				"highPriorityOnly": false,
+				"officialOnly": true,
+				"xPathFilterId": "actual-public",
+				"xPathFilter": "//cap:status='Actual' and //cap:scope='Public'",
+				"areaFilterId": "country-sa"
+			},
+			"sort": ["country"]
+		},
+		{
+			"_index": "alertssubscriptions",
+			"_type": "alertsubscription",
+			"_id": "country-dj-lang-en",
+			"_score": null,
+			"_source": {
+				"recid": "country-dj-lang-en",
+				"name": "Official Public alerts in English for Djibouti",
+				"shortcode": "country-dj-lang-en",
+				"subshape": {
+					"type": "polygon",
+					"coordinates": [[[41,
+					"10.9825"],
+					["43.451944",
+					"10.9825"],
+					["43.451944",
+					13],
+					[41,
+					13],
+					[41,
+					"10.9825"]]]
+				},
+				"subscriptionUrl": "https://alert-feeds.s3.amazonaws.com/country-dj-lang-en/rss.xml",
+				"languageOnly": "en",
+				"highPriorityOnly": false,
+				"officialOnly": true,
+				"xPathFilterId": "actual-public",
+				"xPathFilter": "//cap:status='Actual' and //cap:scope='Public'",
+				"areaFilterId": "country-dj"
+			},
+			"sort": ["country"]
+		}]
+	}
+}

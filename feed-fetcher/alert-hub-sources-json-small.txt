@@ -1,0 +1,15 @@
+{
+  "sources" : [  {
+    "source" : {
+      "sourceId" : "ca-msc-en",
+      "sourceName" : "Canada: Meteorological Service of Canada",
+      "guid" : "urn:oid:2.49.0.0.124.0",
+      "author" : "norm.paulsen@ec.gc.ca",
+      "sourceIsOfficial" : true,
+      "sourceLanguage" : "en",
+      "capAlertFeed" : "http://rss.naad-adna.pelmorex.com/",
+      "authorityCountry" : "ca",
+      "authorityAbbrev" : "msc"
+    }
+  } ]
+}

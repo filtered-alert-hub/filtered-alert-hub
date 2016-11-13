@@ -1,0 +1,14 @@
+{
+  "alert":{
+        "sourceName":"Iraq Ministry of Water Resources, Mosul Dam alerts in Kurdish",
+        "sourceIsOfficial":true,
+        "sourceLanguage":"ku",
+        "folderName":"mosul-dam-ku",
+        "inputRecordKey":"mosul-dam-ku/myTestFile.xml",
+        "inputBucketName":"alert-hub-input",
+        "hubRecordKey":"mosul-dam-ku/2016-04-26-01-03-22-784",
+        "hubBucketName":"alert-hub",
+        "capNamespaceUri":"urn:oasis:names:tc:emergency:cap:1.1",
+        "capXml":""
+  }
+}
