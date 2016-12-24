@@ -88,6 +88,8 @@ exports.handler = function(event, context) {
 
     var sns = send_sns ? new aws.SNS({region:'eu-west-1'}) : null;
 
+    var something_went_wrong = false;
+
     for (var i = 0; i < alerts.length; i++) {
 
       var source_alert = alerts[i].orig;
@@ -310,7 +312,13 @@ exports.handler = function(event, context) {
       else {
         // No shape to search against
         console.log("No shape to search against");
+        something_went_wrong = true;
       }
+    }
+
+    if ( something_went_wrong ) {
+      // Catch-all block to recreate errors -- dump the incoming payload out to the log so we can try and trace the problem
+      console.log("UNHANDLED ERROR CASE:\n\n"+event);
     }
 
     console.log("Complete");
